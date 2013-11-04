@@ -6,20 +6,22 @@ Introduction
 The source of the new website under development. Feel free to 
 contribute wherever you'd like.  
    
-FRONT-END:  
+FRONT-END
+--------- 
 Consider working on CONTENT, STRUCTURE or STYLING with a group to 
 implement a component. 
 
-Most STRUCTURE work done in ./module/Application/view/application/index/index.phtml  
+STRUCTURE work mostly done in ./module/Application/view/application/index/index.phtml  
 and ./module/Application/view/layout/layout.phtml.  
 
-Most STYLING work done in ./public/css and ./public/js  
+STYLING work mostly done in ./public/css and ./public/js  
 along with additional tweaks to STRUCTURE files. 
 
-Most CONTENT work done over google docs and in meetings.  
+CONTENT work mostly done over google docs and in meetings.  
 
     
-BACK-END:
+BACK-END  
+--------  
 Pass variables to front end through 
 Application view controller in ./module/Application/src/Application/Controller/IndexController.php  
 
