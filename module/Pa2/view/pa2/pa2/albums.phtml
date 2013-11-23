@@ -1,0 +1,19 @@
+<?php $toUrl = $this->url('home').'album?id=';?>
+<title>Albums for <?php echo $user->username;?></title>
+<html>
+	<head>
+		<h1>Albums for <?php echo $user->username;?></h1>
+	</head>
+	<body>
+		<table>
+			<?php foreach($albums as $album):?>
+			<tr>
+				<td><a href=<?php echo $toUrl.$album->albumId . ">" . $album->title;?></a></td>
+			</tr>
+			<?php endforeach;?>
+			<tr>
+				<td><a href=<?php echo $this->url('home') . 'albums/edit?username=' . $user->username;?>>Edit Albums?</a></td>
+			</tr>
+		</table>
+	</body>
+</html>

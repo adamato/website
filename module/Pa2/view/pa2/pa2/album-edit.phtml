@@ -1,0 +1,79 @@
+<html>
+	<title>Edit Album</title>
+	<head>
+		<h1>Edit Album: <?php echo $album->title;?></h1>
+	</head>
+	<body>
+		<h4>Change public/private access of this album</h4>
+		<form method="POST">
+				<input type="hidden" name="op" value="access">
+				<input type="hidden" name="albumId" value="<?php echo $album->albumId;?>">
+				<input type="hidden" name="username" value="<?php echo $album->username;?>">
+				<input type="radio" name="Access" value="public">Public
+				<input type="radio" name="Access" value="private">Private
+				<input type="submit" name="Submit" value="Change access"/>
+		</form>
+		<br>
+		<h4>Users who have access to this album</h4>
+		<table>
+			<tr>
+				<form method="POST">
+				<td>Add access to the user:<input type="text" style="width: 75px" name="AddAccess"></td>
+				<input type="hidden" name="op" value="userAccessAdd">
+				<input type="hidden" name="albumId" value="<?php echo $album->albumId;?>">
+				<input type="hidden" name="username" value="<?php echo $album->username;?>">
+				<td><input type="submit" value="Add" name="Submit"/></td>
+				</form>
+			</tr>
+			<tr>
+				<th>User</th>
+				<th>Remove access</th>
+			</tr>
+			<?php foreach($album->accessors as $username):?>
+			<tr>
+				<td><?php echo $username;?></td>
+				<form method="POST">
+				<input type="hidden" name="op" value="userAccessRemove">
+				<input type="hidden" name="albumId" value="<?php echo $album->albumId;?>">
+				<input type="hidden" name="username" value="<?php echo $album->username;?>">
+				<input type="hidden" name="accessor" value="<?php echo $username;?>">
+				<td><input type="submit" value="Remove" name="Submit"/></td>
+				</form>
+			<tr>
+			<?php endforeach;?>
+		</table>
+
+		<br><br><br>
+		<h4>Add/Delete Photos</h4>
+		<form name="upload-form" id="upload-form" method="post" enctype="multipart/form-data">
+    		<div class="form-element">
+        		<label for="image-file">Add a new photo:
+        		<input type="file" name="image-file" id="image-file">
+        		<input type="hidden" value="add" name="op"/>
+        		<input type="hidden" name="albumId" value="<?php echo $album->albumId;?>">
+    			<input type="hidden" name="username" value="<?php echo $album->username;?>">
+    			<button>Submit</button>
+    		</div>
+		</form>
+		<br>
+		<table>
+			<tr>
+				<th>Photos</th>
+				<th>Delete</th>
+			</tr>
+			<?php foreach($photos as $photo):?>
+			<tr>
+				<td><img src="<?php echo $photo->url;?>" alt="some_text" width="200px" height="200px" padding="2"></a></td>
+				<!--<td><a href=<?php $this->url('home')."pic?id=" . $photo->picId;?>"><img src="<?php echo $photo->url;?>" alt="some_text" width="200px" height="200px" padding="2"></a></td>-->
+				<form method="POST">
+				<input type="hidden" name="op" value="delete">
+				<input type="hidden" name="albumId" value="<?php echo $album->albumId;?>">
+				<input type="hidden" name="picId" value="<?php echo $photo->picId;?>">
+				<input type="hidden" name="username" value="<?php echo $album->username;?>">
+				<td><input type="submit" value="Delete" name="Submit"/></td>
+				</form>
+			</tr>
+			<?php endforeach;?>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<h1>Account Creation</h1>
+<form action="user" method="post">
+	Username:<input type="text" pattern="(?=.{3,})(?=^[a-zA-Z0-9_]*$).*$" name="username" required/><br>
+	First Name:<input type="text" name="fname" required/><br>
+	Last Name:<input type="text" name="lname" required/><br>
+	Email Address:<input type="email" name="emailAddr" required/><br>
+	Password:<input type="password" pattern="(?=.{3,15})(?=^[a-zA-Z0-9_]*$)(?=[A-Za-z].*[0-9]|[0-9].*[A-Za-z]).*$" id="password" name="password" required/><br>
+	Confirm Password:<input type="password" pattern="(?=.{3,15})(?=^[a-zA-Z0-9_]*$)(?=[A-Za-z].*[0-9]|[0-9].*[A-Za-z]).*$" id="passwordconf" name="passwordconf"  oninput="check(this)" required/><br>
+	<script language='javascript' type='text/javascript'>
+	function check(input) {
+	    if (input.value != document.getElementById('password').value) {
+	        input.setCustomValidity('The two passwords must match.');
+	    } else {
+	        // input is valid -- reset the error message
+	        input.setCustomValidity('');
+	   }
+	}
+	</script>
+	<input type="submit" value="Submit"/>
+	<div style="color:#FF0000">
+		<strong><?php echo $error;?></strong>
+	</div>
+</form>
