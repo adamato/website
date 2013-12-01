@@ -1,70 +1,39 @@
-KTPDEV framework  
-=======================  
+KTP WEBSITE FRAMEWORK  
+=====================  
   
-Introduction  
-------------  
-The source of the new website under development. Feel free to 
-contribute wherever you'd like.  
-   
-FRONT-END
---------- 
-Consider working on CONTENT, STRUCTURE or STYLING with a group to 
-implement a component. 
+Lightweight and flexible web development.  
+Public files to present the front-end.  
+Server code to host the back-end.  
+  
+File structure:*   
+public/  				:files used to generate website  
+	css/				-stylesheets  
+	html/				-html pages  
+		/members.html 	---members page
+		/rush.html 		---rush page
+	js/					-scripts  
+		/index.js 		---ascensor ui actions and loading other divs
+	img/				-image files (actual files omitted)
+	vendor/  			-static frameworks and externally developed files  
+		js/				---scripts (mostly jquery)  
+		css/ 			---styles (bootstrap)  
+	index.html 			-main page of website
+  
+node/					:web server files  
+	package.json 		-file describing project and node dependencies  
+	server.js 			-node.js file to serve up pages from within the framework  
 
-STRUCTURE work mostly done in ./module/Application/view/application/index/index.phtml  
-and ./module/Application/view/layout/layout.phtml.  
-
-STYLING work mostly done in ./public/css and ./public/js  
-along with additional tweaks to STRUCTURE files. 
-
-CONTENT work mostly done over google docs and in meetings.  
-
-    
-BACK-END  
---------  
-Pass variables to front end through 
-Application view controller in ./module/Application/src/Application/Controller/IndexController.php  
-
-Profiles and Calenders will be implemented in seperate modules  
-
-
-Installation  
-------------  
-*Disclaimer  
-This guide is currently geared toward building on linux. 
-Please add more if you work through building on another OS.
+data/					:holds database files and schemas  
+  
+*from this directory; not including readmes and changelogs  
+  
+To run the full server, check the node and data READMEs.
+Can test and run the majority of front end by clicking and dragging public/index.html into a browser nav bar  
   
 
-To install dependencies:   
+HOW TO CONTRIBUTE  
+=================  
   
-./composer.phar self-update  
-./composer.phar install  
-
-
-Virtual Host
-------------  
-0: Establish Virtual Host (apache2 on linux)  
-cd /etc/apache2/sites-available  
-vim ktpweb (and insert the following)  
-<VirtualHost *:80>  
-	ServerName ktpweb.localhost  
-	DocumentRoot /var/www/ktpweb/public  
-	SetEnv APPLICATION_ENV "development"  
-	<Directory /var/www/ktpweb/public>  
-		DirectoryIndex index.php  
-		AllowOverride All  
-		Order allow,deny  
-		Allow from all    
-	</Directory>  
-</VirtualHost>  
-:wq  
-sudo a2ensite ktpweb  
-sudo service apache2 restart  
+Feel free to make any changes and additions to the git. Be sure to update READMEs and CHANGELOGs whenever you are making a change that requires explanation.
+Please comment sections of non-trivial code.  
   
-1: Tell your computer to recognize the localhost
-edit /etc/hosts  
-after 127.0.0.1 add ktpweb.localhost  
-
-2: Config ZF2 for database
-cd ./config/autoload  
-(more on this once we use more database)  
