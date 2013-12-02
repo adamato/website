@@ -16,5 +16,3 @@ ascensor.on("scrollStart", function(event, floor){
 	$(".internal-links li:eq("+floor.to+")").addClass("selected");
 });
 
-
-// Code here to use selectors for UI elements for a responsive environment
