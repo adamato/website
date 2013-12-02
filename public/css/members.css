@@ -1,0 +1,48 @@
+#members-header{
+	border-bottom:20px solid pink !important;
+}
+
+#mem-hdr-font{
+	font-size: 75px;
+	color: cadetblue;
+}
+
+.mem-list{
+	list-style-type: none;
+}
+
+#headshot{
+	position: relative;
+	height: 50%;
+	width: 80%;
+	background-color: yellow;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+#member-info{
+	position: relative;
+	margin-top: 2.5%;
+	height: 15%;
+	background-color: red;
+}
+
+#active-names{
+	position: absolute;
+	right: 0;
+	background-color: blue;
+	width: 10%;
+	height: 75%;
+}
+
+#filter-types{
+	position: absolute;
+	left: 0;
+	background-color: blue;
+	width: 10%;
+	height: 75%;
+}
+
+li.name{
+
+}
