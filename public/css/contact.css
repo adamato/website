@@ -9,12 +9,14 @@
 	-ms-transition: all ease 0.3s;
 	transition: all ease 0.3s;
 	cursor:pointer;
+	margin-top: 0;
 	
 }
 .social-slide:hover {
 	background-position: 0px -48px;
-
 }
+
+/* maybe try and use our own downloaded images eventually */
 .twitter-hover{
 	background-image:url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/twitter-hover.png');
 }

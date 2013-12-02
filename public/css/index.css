@@ -31,7 +31,7 @@ body{
 footer{
 height: 50px;
 width: 100%;
-background-image:url('http://postmates.com/static/img/bg.png');
+background-image:url('img/bg.png');
 bottom: 0;
 position: relative;
 text-align: center;
@@ -46,13 +46,10 @@ text-align: center;
 	margin-right:auto;
 }
 
-
-
-
-
-
-
-
+#feed{
+	position:relative;
+	margin-left:60%;
+}
 
 
 

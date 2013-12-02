@@ -1,3 +1,9 @@
+12/2
+Ben added twitter feed bar to home page
+
+12/1
+Ben added links to our social media sites (top left of index.html) and styled headers and content sections, including a carousel of our images on the rush page.
+
 12/1 
 Structure of website:
 	Moved web files into public directory, and vendor files in public/vendor subdirectory, in order to seperate pages loaded for specific requests, and pages used for static loading of webpage.
