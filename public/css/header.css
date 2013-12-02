@@ -1,0 +1,40 @@
+
+.navbar-collapse{
+	float:right;
+}
+.active{
+
+}
+
+
+footer{
+height: 50px;
+width: 100%;
+background-image:url('http://postmates.com/static/img/bg.png');
+bottom: 0;
+position: relative;
+text-align: center;
+	border-top: 1px solid;
+  border-top-color: #ccc;
+  border-top-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 0px) and (max-width:767px) {
+	.navbar-collapse{
+		float:none;
+	}
+}
+.glass{
+
+  border-bottom: 1px solid;
+  border-bottom-color: #ccc;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+#headerrr{
+	background-color:rgba(34, 34, 34, .95);
+}
+
