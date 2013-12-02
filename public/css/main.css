@@ -26,7 +26,6 @@ nav {
 }
 
 li.link-internal {
-	background-color: blue;
 	display: inline-block; 
 	zoom: 1;
 	*display: inline;
