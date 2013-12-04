@@ -51,7 +51,18 @@ text-align: center;
 	margin-left:60%;
 }
 
+#idx-header{
+	border-bottom:20px solid #66CC66 !important;
+}
 
+.internal-links{
+	position: absolute; 
+	width: 1850px; 
+	opacity: .8;
+}
+
+
+/****************************************************************************************************************************************/
 
 /*animations*/
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes fadeInDown {

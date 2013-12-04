@@ -27,8 +27,9 @@ data/					:holds database files and schemas
   
 *from this directory; not including readmes and changelogs  
   
-To run the full server, check the node and data READMEs.
-Can test and run the majority of front end by clicking and dragging public/index.html into a browser nav bar  
+To run the full server, you can either download and install nodejs, or use the compiled version if it works on your system:
+./node/nodejs node/server.js
+Can test and run the majority of front end by clicking and dragging public/index.html into a browser nav bar. 
   
 
 HOW TO CONTRIBUTE  

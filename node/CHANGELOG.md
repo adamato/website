@@ -1,3 +1,6 @@
+12/5 5:00
+Compiled nodejs:
+	Added a compiled version of nodejs-v0.10.22. This allows running the full web server without installing node.js.
 
 12/1 12:12
 Node dependencies:

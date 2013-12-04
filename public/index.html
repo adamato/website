@@ -2,6 +2,11 @@
     Main HTML page of the website
 
 -->
+<!--
+Notes: 12/4 5:00pm
+    for some reason, it seems the initial load of the page isn't properly grabbing all the CSS. the social buttons float a little below the top of the page on the initial load, but stay where they should be after refreshing the page;
+    currently no onclick functionality for the buttons on the nav. we can do something cool with jquery if we want
+-->
 <!doctype html>
 <html>
     <head>
@@ -24,7 +29,7 @@
                 but additional pages (possibly much larger) can be loaded independently
             
             -->
-            <div class="page-header" style="border-bottom:20px solid #66CC66 !important;">
+            <div class="page-header" id="idx-header">
                 <h1 class="animated2 fadeInLeftBig tk-proxima-nova hello">
                     <b><font color="#1F45FC">Kappa Theta Pi</font></b>
                 </h1>
@@ -46,7 +51,7 @@
 
         </div>
           <nav class="nav-bar">
-            <ul class="internal-links" style="position:absolute; width:1850px; opacity:.8;">
+            <ul class="internal-links">
                 <li class="link-internal"><a><button class="btn btn-large btn-primary" type="button">Home</button></a></li>
                 <li class="link-internal"><a><button class="btn btn-large btn-primary" type="button">Rush</button></a></li>
                 <li class="link-internal"><a><button class="btn btn-large btn-primary" type="button">Members</button></a></li>
