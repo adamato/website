@@ -6,7 +6,7 @@ var slider = $('.bxslider').bxSlider({
 
 // possibly try the slideSelector option from the bxslider API
 
-$('.name a').mouseover(function(){
+$('.name').mouseover(function(){
 	slider.goToSlide($(this).attr('data-slide-index'));
 });
 
