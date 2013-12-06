@@ -265,9 +265,32 @@ text-align: center;
 	-webkit-backface-visibility: hidden; /*Just for webkit to have a smooth font*/
 }
 
-.ch-info-grid {
-	float: left;
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
 }
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+
 
 .ch-info .ch-info-front {
 	-webkit-transition: all 0.6s ease-in-out;
@@ -366,4 +389,10 @@ text-align: center;
 	
 	opacity: 1;
 	pointer-events: auto;
+}
+
+.main{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
 }
