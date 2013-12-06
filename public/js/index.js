@@ -1,5 +1,5 @@
-$('#rush').load("html/rush.html");
-$('#members').load("html/members.html");
+// $('#rush').load("html/rush.html");
+// $('#members').load("html/members.html");
 
 var ascensor = $('#ascensor').ascensor({direction:"x"});
 
