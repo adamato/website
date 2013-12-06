@@ -1,20 +1,14 @@
-/*
-	var headshots = $('#headshot').ascensor({direction:"x",childType:'article'});
+var slider = $('.bxslider').bxSlider({
+  pagerCustom: '#bx-pager',
+  speed:100
+});
 
-	$(".name li").click(function(event, index) {
-		headshots.trigger("scrollToStage", $(this).index());
-	});
 
-	$(".name li").hover(function(event, index) {
-		headshots.trigger("scrollToStage", $(this).index());
-	});                                               
+// possibly try the slideSelector option from the bxslider API
 
-	headshots.on("scrollStart", function(event, floor){
-		$(".name li").removeClass("selected");
-		$(".name li:eq("+floor.to+")").addClass("selected");
-	});
-*/
-
+$('.name a').mouseover(function(){
+	slider.goToSlide($(this).attr('data-slide-index'));
+});
 
 /*
 use https://github.com/wandoledzep/bxslider-4

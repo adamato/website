@@ -1,3 +1,7 @@
+12/6
+beginnings of the member section;
+	added bxslider jquery plugin to allow mousing over the list of names to display photos
+
 12/5
 lots of changes today, most recent by dom being:
 	moved rush and members sections into index.html and removed redundant html files

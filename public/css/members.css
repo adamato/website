@@ -18,6 +18,7 @@
 	background-color: yellow;
 	margin-top: 50px;
 	overflow: hidden;
+	text-align: center;
 }
 
 #member-info{
@@ -44,5 +45,7 @@
 }
 
 li.name{
-
+	text-align: center;
 }
+	
+	
