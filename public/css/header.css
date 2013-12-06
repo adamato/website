@@ -7,19 +7,6 @@
 }
 
 
-footer{
-height: 50px;
-width: 100%;
-background-image:url('http://postmates.com/static/img/bg.png');
-bottom: 0;
-position: relative;
-text-align: center;
-	border-top: 1px solid;
-  border-top-color: #ccc;
-  border-top-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
 @media screen and (min-width: 0px) and (max-width:767px) {
 	.navbar-collapse{
 		float:none;
@@ -36,4 +23,36 @@ text-align: center;
 }
 #headerrr{
 	background-color:rgba(34, 34, 34, .95);
+}
+
+.social-slide {
+  height: 48px;
+  width: 48px;
+  margin: 10px;
+  float: left;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  cursor:pointer;
+  margin-top: 0;
+  
+}
+.social-slide:hover {
+  background-position: 0px -48px;
+}
+
+/* maybe try and use our own downloaded images eventually */
+.twitter-hover{
+  background-image:url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/twitter-hover.png');
+}
+.instagram-hover{
+  background-image:url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/instagram-hover.png');
+}
+.linkedin-hover{
+  background-image:url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/linkedin-hover.png');
+}
+.facebook-hover{
+  background-image:url('http://bradsknutson.com/wp-content/uploads/2013/05/facebook-hover.png');
 }

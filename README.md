@@ -27,9 +27,10 @@ data/					:holds database files and schemas
   
 *from this directory; not including readmes and changelogs  
   
-To run the full server, you can either download and install nodejs, or use the compiled version if it works on your system:
+To run the full server, you can either download and install nodejs, or use the compiled version if it works on your system*:
 ./node/nodejs node/server.js
 Can test and run the majority of front end by clicking and dragging public/index.html into a browser nav bar. 
+*it seems that this compiled version doesn't work on mac, but you can run the full server by double clicking index.html from finder.
   
 
 HOW TO CONTRIBUTE  

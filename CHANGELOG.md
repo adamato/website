@@ -1,3 +1,11 @@
+12/5
+lots of changes today, most recent by dom being:
+	moved rush and members sections into index.html and removed redundant html files
+	moved around some css to simplify the file's we're working with
+	used some classes to line up headers the same across pages
+	lots of random little things, like changing the main divs to sections (better htmling apparently)
+	made some changes to the options of ascensor, like adding the /#/MEMBERS and /#/RUSH url selectors
+
 12/2
 Ben added twitter feed bar to home page
 

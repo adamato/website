@@ -1,46 +1,21 @@
 body{
 	padding-top:50px;
 }
-.hello{
+.pageheader{
 	font-weight:lighter;
 	font-size:5em;
 	margin-right:auto;
 	margin-left:auto;
 	padding-top: 20px; 
 }
-.about{
-	font-family:Helvetica;
-	font-weight:lighter;
-	font-size:2em;
-	margin-right:auto;
-	margin-left:auto;
-	width:80%;
-}
-.info{
-	font-size:2em;
-	font-weight:lighter;
-	width:83%;
-	margin-right:auto;
-	margin-left:auto;
-}
+
 #dotted{
 	border-top:3px dotted #eeeeee;
 	width:80%;
 	margin-right:auto;
 	margin-left:auto;
 }
-footer{
-height: 50px;
-width: 100%;
-background-image:url('img/bg.png');
-bottom: 0;
-position: relative;
-text-align: center;
-	border-top: 1px solid;
-  border-top-color: #ccc;
-  border-top-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
+
 .dev-design{
 	margin-top:5em;
 	margin-left:auto; 
@@ -63,6 +38,54 @@ text-align: center;
 	background: black;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#home {
+	background: #F9B233;
+}
+
+#rush {
+	background: #71B5E5;
+}
+#members {
+	background: #B3CE4A;
+}
+
+nav {
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+li.link-internal {
+	display: inline-block; 
+	zoom: 1;
+	*display: inline;
+	padding: 10px;
+}        
+
+li.selected {
+	color: #0f0;
+}
+
+#ascensor {
+	overflow: hidden;
+}
+
+ul.nav {
+	width: 100%;
+}
+
+
+
+/*****************************************************WEBKIT CODE**********************************************/
 
 .animated
 {-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes fadeInDown {
@@ -227,6 +250,8 @@ text-align: center;
 	-o-animation-name: fadeInLeftBig;
 	animation-name: fadeInLeftBig;
 }
+
+/*****************************************************BOXES**************************************************/
 .ch-item {
 	width: 100%;
 	height: 0;
@@ -247,7 +272,7 @@ text-align: center;
 .ch-info-wrap {
 	top: 20px;
 	left: 20px;
-	background: #f9f9f9 url(../images/bg.jpg);
+	background: #f9f9f9 url(../img/bg.jpg);
 	box-shadow: 
 		0 0 0 20px grey, 
 		inset 0 0 3px rgba(115,114, 23, 0.8);
@@ -320,11 +345,11 @@ text-align: center;
 }
 
 .ch-img-1 { 
-	background-image: url(../images/13.jpg);
+	background-image: url(../img/13.jpg);
 }
 
 .ch-img-2 { 
-	background-image: url(../images/14.jpg);
+	background-image: url(../img/14.jpg);
 }
 
 .ch-img-3 { 
