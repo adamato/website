@@ -264,8 +264,8 @@ ul.nav {
 .ch-info-wrap, 
 .ch-info{
 	position: absolute;
-	width: 180px;
-	height: 180px;
+	width: 480px;
+	height: 480px;
 	/*border-radius: 50%;*/
 }
 
@@ -310,8 +310,8 @@ ul.nav {
 }
 
 .ch-grid li {
-	width: 220px;
-	height: 220px;
+	width: 520px;
+	height: 520px;
 	display: inline-block;
 	margin: 20px;
 }
