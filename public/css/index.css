@@ -28,7 +28,17 @@ body{
 }
 
 #idx-header{
-	border-bottom:20px solid #66CC66 !important;
+	border: none;
+	/*
+	border-bottom: 20px solid rgb(102, 204, 102);
+    border-bottom: 20px solid rgb(102, 204, 102, .4);
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
+    */
+}
+
+.container{
+	color: #666;
 }
 
 .internal-links{
@@ -48,7 +58,7 @@ body {
 }
 
 #home {
-	background: url(.../img/hexabump.png) repeat;  
+	background: #666 url('img/hexabump.png');
 	background-repeat: repeat;
 }
 
@@ -443,9 +453,18 @@ ul.nav {
 hr.nice {
     border: 0;
     height: 0; /* Firefox... */
-    box-shadow: 0 0 10px 1px black;
+    box-shadow: 0 0 10px 1px #458fff;
 }
 hr.nice:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+hr.nice2 {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 40px 5px #458fff;
+}
+hr.nice2:after {  /* Not really supposed to work, but does */
     content: "\00a0";  /* Prevent margin collapse */
 }
 
