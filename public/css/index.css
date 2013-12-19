@@ -48,7 +48,8 @@ body {
 }
 
 #home {
-	background: #F9B233;
+	background: url(.../img/hexabump.png) repeat;  
+	background-repeat: repeat;
 }
 
 #rush {
@@ -254,8 +255,8 @@ ul.nav {
 /*****************************************************BOXES**************************************************/
 .ch-item {
 	width: 100%;
-	height: 0;
-	/*border-radius: 50%;*/
+	height: 100%;
+	border-radius: 50%;
 	position: relative;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 	cursor: default;
@@ -264,9 +265,9 @@ ul.nav {
 .ch-info-wrap, 
 .ch-info{
 	position: absolute;
-	width: 480px;
-	height: 480px;
-	/*border-radius: 50%;*/
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
 }
 
 .ch-info-wrap {
@@ -284,7 +285,7 @@ ul.nav {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	/*border-radius: 50%;*/
+	border-radius: 50%;
 	background-position: center center;
 	
 	-webkit-backface-visibility: hidden; /*Just for webkit to have a smooth font*/
@@ -310,8 +311,8 @@ ul.nav {
 }
 
 .ch-grid li {
-	width: 520px;
-	height: 520px;
+	width: 220px;
+	height: 220px;
 	display: inline-block;
 	margin: 20px;
 }
@@ -437,6 +438,18 @@ ul.nav {
 	height: 50%;
 	float: left;
 }
+
+/*to make nice line*/
+hr.nice {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+hr.nice:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+
 
 
 

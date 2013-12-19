@@ -37,6 +37,9 @@
   transition: all ease 0.3s;
   cursor:pointer;
   margin-top: 0;
+  -moz-box-shadow:inset -7px -4px 22px #000000;
+  -webkit-box-shadow:inset -7px -4px 22px #000000;
+  box-shadow:inset -7px -4px 22px #000000;
   
 }
 .social-slide:hover {
