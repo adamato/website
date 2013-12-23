@@ -34,8 +34,12 @@ Notes: 12/4 5:00pm
                     </h1>
                     <hr class="nice2"></hr> 
                 </div>
+
+                    <div class="vendor">
+                        <iframe class="vid" src="//player.vimeo.com/video/81946092?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
                 <div class="container">
-                    <b>
+                    <b><br><br>
                     On January 10th, 2012, this co-ed professional fraternity was founded by a group of Informatics concentrators at the University of Michigan, Ann Arbor. The founders had a previously unmet desire to collaborate with a dynamic group of peers. Unlike most professional fraternities, Kappa Theta Pi aims to bring together students of all educational backgrounds. From business students to computer scientists, communications majors to young entrepreneurs, this fraternity bonds over the creation and implementations of the technologies that improve our lives. We are developing the leaders and the best of the future workplace. Whether it's forming a start-up, developing professional skills, or learning more about the world, Kappa Theta Pi offers a tight-knit community bringing together different ideas, outlooks, approaches, and knowledge. Kappa Theta Pi opens doors for those with a passion for technology.
                     </b>
                     <hr class="nice"></hr>                
@@ -245,15 +249,16 @@ Year:<br>
 <!--/////////////////NAV-BAR//////////////////////-->
           <nav class="nav-bar">
             <ul class="internal-links">
-              <li class="link-internal" style="margin-right:250px;"><font color="limegreen" size="4">Kappa Theta Pi</font></li>
-                <li class="link-internal"><a><button class="btn btn-large btn-primary" type="button">Home</button></a></li>
-                <li class="link-internal"><a><button class="btn btn-large btn-primary" type="button">Rush</button></a></li>
-                <li class="link-internal"><a><button class="btn btn-large btn-primary" type="button">Members</button></a></li>
+            <div class="slidething">
+              <li class="link-internal"><font color="limegreen" size="4">Home</font></li>
+              <li class="link-internal"><font color="limegreen" size="4">Rush</font></li>
+              <li class="link-internal"><font color="limegreen" size="4">Members</font></li>
+            </div>
                 <p style="margin-top:-50px;">
                 <a href="https://twitter.com/KappaThetaPi" class="twitter-hover social-slide"></a>
                 <a href="https://www.facebook.com/groups/345015858877204/" class="facebook-hover social-slide"></a>
                 <a href="http://www.linkedin.com/groups?gid=4661089" class="linkedin-hover social-slide"></a></p>
-            </p>
+            
             </ul>                        
         </nav>
 
@@ -265,6 +270,13 @@ Year:<br>
 <script src="vendor/js/jquery.bxslider.min.js" type="text/javascript"></script>
 <script src="vendor/js/jquery.ascensor.min.js" type="text/javascript"></script>  
 <script src="vendor/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="vendor/js/jquery.fitvids.js"></script>
+<script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(".vendor").fitVids();
+  });
+</script>
 <script src="js/index.js" type="text/javascript"></script>
 <script src="js/rush.js" type="text/javascript"></script>
 <script src="js/members.js" type="text/javascript"></script>

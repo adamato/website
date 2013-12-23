@@ -41,6 +41,22 @@ body{
 	color: #666;
 }
 
+.vendor {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 500px;
+	width: 80%;
+  	padding: 2%;
+
+  	margin-bottom: 2em;
+}
+
+iframe.vid {
+	/*fixed height...?*/
+	max-height: 450px !important;
+}
+
 .internal-links{
 	position: absolute; 
 	width: 1850px; 
@@ -84,6 +100,12 @@ li.link-internal {
 
 li.selected {
 	color: #0f0;
+}
+
+/*slide the nav*/
+
+.slidething {
+	margin-right: 900px;
 }
 
 #ascensor {
