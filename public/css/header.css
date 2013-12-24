@@ -37,6 +37,9 @@
   transition: all ease 0.3s;
   cursor:pointer;
   margin-top: 0;
+  -moz-box-shadow:inset -7px -4px 22px #000000;
+  -webkit-box-shadow:inset -7px -4px 22px #000000;
+  box-shadow:inset -7px -4px 22px #000000;
   
 }
 .social-slide:hover {
@@ -45,14 +48,18 @@
 
 /* maybe try and use our own downloaded images eventually */
 .twitter-hover{
+  background-color: blue;
   background-image:url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/twitter-hover.png');
 }
 .instagram-hover{
+
   background-image:url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/instagram-hover.png');
 }
 .linkedin-hover{
+  background-color: blue;
   background-image:url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/linkedin-hover.png');
 }
 .facebook-hover{
+  background-color: blue;
   background-image:url('http://bradsknutson.com/wp-content/uploads/2013/05/facebook-hover.png');
 }

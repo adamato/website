@@ -28,7 +28,33 @@ body{
 }
 
 #idx-header{
-	border-bottom:20px solid #66CC66 !important;
+	border: none;
+	/*
+	border-bottom: 20px solid rgb(102, 204, 102);
+    border-bottom: 20px solid rgb(102, 204, 102, .4);
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
+    */
+}
+
+.container{
+	color: #666;
+}
+
+.vendor {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 500px;
+	width: 80%;
+  	padding: 2%;
+
+  	margin-bottom: 2em;
+}
+
+iframe.vid {
+	/*fixed height...?*/
+	max-height: 450px !important;
 }
 
 .internal-links{
@@ -48,7 +74,8 @@ body {
 }
 
 #home {
-	background: #F9B233;
+	background: #666 url('img/hexabump.png');
+	background-repeat: repeat;
 }
 
 #rush {
@@ -73,6 +100,12 @@ li.link-internal {
 
 li.selected {
 	color: #0f0;
+}
+
+/*slide the nav*/
+
+.slidething {
+	margin-right: 900px;
 }
 
 #ascensor {
@@ -254,8 +287,8 @@ ul.nav {
 /*****************************************************BOXES**************************************************/
 .ch-item {
 	width: 100%;
-	height: 0;
-	/*border-radius: 50%;*/
+	height: 100%;
+	border-radius: 50%;
 	position: relative;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 	cursor: default;
@@ -264,9 +297,9 @@ ul.nav {
 .ch-info-wrap, 
 .ch-info{
 	position: absolute;
-	width: 480px;
-	height: 480px;
-	/*border-radius: 50%;*/
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
 }
 
 .ch-info-wrap {
@@ -284,7 +317,7 @@ ul.nav {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	/*border-radius: 50%;*/
+	border-radius: 50%;
 	background-position: center center;
 	
 	-webkit-backface-visibility: hidden; /*Just for webkit to have a smooth font*/
@@ -310,8 +343,8 @@ ul.nav {
 }
 
 .ch-grid li {
-	width: 520px;
-	height: 520px;
+	width: 220px;
+	height: 220px;
 	display: inline-block;
 	margin: 20px;
 }
@@ -437,6 +470,27 @@ ul.nav {
 	height: 50%;
 	float: left;
 }
+
+/*to make nice line*/
+hr.nice {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px #458fff;
+}
+hr.nice:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+hr.nice2 {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 40px 5px #458fff;
+}
+hr.nice2:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+
 
 
 

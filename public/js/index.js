@@ -4,9 +4,14 @@ $(".internal-links li").click(function(event, index) {
 	ascensor.trigger("scrollToStage", $(this).index());
 });
 
+/*
+
 $(".internal-links li").hover(function(event, index) {
 	ascensor.trigger("scrollToStage", $(this).index());
-});                                               
+});   
+
+*/
+
 
 ascensor.on("scrollStart", function(event, floor){
 	$(".internal-links li").removeClass("selected");
