@@ -95,17 +95,25 @@ li.link-internal {
 	display: inline-block; 
 	zoom: 1;
 	*display: inline;
-	padding: 10px;
-}        
+	padding: 18px;
+	margin-top: auto;
+	color: #19ff19;
+	width: 180px;
+	height: 68px;
+	border-right: 3px solid yellow;
+	font-size: 20px;
+}   
 
-li.selected {
-	color: #0f0;
-}
+li.link-internal:hover {
+	color: blue;
+	cursor: pointer;
+	cursor: hand;
+}   
 
 /*slide the nav*/
 
 .slidething {
-	margin-right: 900px;
+	margin-right: 1090px;
 }
 
 #ascensor {
@@ -307,7 +315,7 @@ ul.nav {
 	left: 20px;
 	background: #f9f9f9 url(../img/bg.jpg);
 	box-shadow: 
-		0 0 0 20px grey, 
+		0 0 0 20px gray, 
 		inset 0 0 3px rgba(115,114, 23, 0.8);
 
 }

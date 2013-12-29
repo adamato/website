@@ -9,8 +9,11 @@
 
 @media screen and (min-width: 0px) and (max-width:767px) {
 	.navbar-collapse{
-		float:none;
+		/*float:none;*/
 	}
+
+  
+  
 }
 .glass{
 
@@ -30,13 +33,14 @@
   width: 48px;
   margin: 10px;
   float: left;
+
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   transition: all ease 0.3s;
   cursor:pointer;
-  margin-top: 0;
+  margin-top: 10px;
   -moz-box-shadow:inset -7px -4px 22px #000000;
   -webkit-box-shadow:inset -7px -4px 22px #000000;
   box-shadow:inset -7px -4px 22px #000000;
