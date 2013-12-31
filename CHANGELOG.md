@@ -1,3 +1,20 @@
+12/31
+File structure:
+	moved server files to top level directory, and changed 'vendor' files to 'lib' files, as is consistant with node.js projects. 
+	moved public/css/img to public/img.
+	removed public/css/header.css
+
+File changes:
+	index.html: cleaned up some code and fixed nav-bar, but broke social network links. Added sam's rush info to rush section.
+	index.css: moved webkit code to public/lib/css/webkit.css, removed some redundant definitions
+
+Node.js:
+	added gruntfile and livereload (commented out at bottom of index.html): server will be run with: grunt
+	 this allows logging of file uploads and automatic jshint for debugging.
+	 if running server with grunt, changes to any files are made and server is reset with updates automatically.
+	finished package.json file for loading node modules. added grunt dev dependencies. 
+	install full suite of node packages with npm install --save-dev (might need sudo, requires node.js and npm) 
+
 12/6
 beginnings of the member section;
 	added bxslider jquery plugin to allow mousing over the list of names to display photos

@@ -2,24 +2,19 @@
     Main HTML page of the website
 
 -->
-<!--
-Notes: 12/4 5:00pm
-    for some reason, it seems the initial load of the page isn't properly grabbing all the CSS. the social buttons float a little below the top of the page on the initial load, but stay where they should be after refreshing the page;
-    currently no onclick functionality for the buttons on the nav. we can do something cool with jquery if we want
--->
 <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Kappa Theta Pi</title>
-        <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/rush.css">
         <link rel="stylesheet" type="text/css" href="css/members.css">
         <link rel="stylesheet" type="text/css" href="css/images.css">
-        <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="vendor/css/jquery.bxslider.css">
-        <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap-responsive.min.css">    
+        <link rel="stylesheet" type="text/css" href="lib/css/webkit.css">
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/css/jquery.bxslider.css">
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-responsive.min.css">    
     </head>
     <body style="margin-top:-50px">
         <div id="ascensor">
@@ -35,7 +30,7 @@ Notes: 12/4 5:00pm
                     <hr class="nice2"></hr> 
                 </div>
 
-                    <div class="vendor">
+                    <div class="video">
                         <iframe class="vid" src="//player.vimeo.com/video/81946092?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                 <div class="container">
@@ -118,7 +113,6 @@ Notes: 12/4 5:00pm
 
             </section>
 
-
 <!---//////////////////////////////////////////////////////////////////////////////////////
 #RUSH
 ///////////////////////////////////////////////////////////////////////////////////////////-->
@@ -144,58 +138,68 @@ Notes: 12/4 5:00pm
 
                     <div class="container">
                         <h3>
-                        As an accepted member of Kappa Theta Pi, you will have access to a myriad of resources and opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building and critiquing, professional photography, start-up opportunities, leadership roles, great networking, and fun social activities with like-minded people.
+                        As an accepted member of Kappa Theta Pi, you will have access to a myriad of resources and opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building and critiquing, professional photography, start-up opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.
                         </h3>
-                        <center>
-                            <h2>
-                                <br>With <em>us</em>, you can be at the forefront of creating a legacy.
-                                <br>Rush occurs at the beginning of both Fall & Winter Semesters.
-                                <br>
-                                <br>Contact our Outreach Chairs for more information:
-                                <br><b>Patrick Riggs (riggspc@umich.edu)
-                                <br>Jeremy Wdowik (jjwdowik@umich.edu)</b>
-                            </h2>
-                        </center>
+                        <h2>
+                            <br>With <em>us</em>, you can be at the forefront of creating a legacy.
+                            <br>Rush occurs at the beginning of both Fall & Winter Semesters.
+                            <br>
+                            <br>Contact our Membership Chair for more information:
+                            <br><b>Samantha Bolin <a href="mailto:sbolin@umich.edu">sbolin@umich.edu</a></b>
+                        </h2>
+                        <h3>Winter Rush 2014<h3>
+                        Important Dates:
+                        <ul>
+                            <li>Winterfest: January 14 4-8pm. Come visit our station and learn more about KTP and the rush process!</li>
+                            <li>Informational Meetings: We have separate Mass meetings based on interests but you are more then welcome to attend any session.</li>
+                            <li>Informatics: January 16, Business: January 19, Computer Science: January 20, and General: January 23.</li>
+                        </ul>
+                        Rush Events:
+                        <ul>
+                            <li>Meet and Greet: January 22</li>
+                            <li>Game Night: January 29</li>
+                            <li>All Hands on Tech: February 1</li>
+                            <li>Application Due: January 24 ((attach application))</li>
+                            <li>Interviews: February 3-5</li>
+                        </ul>   
                     </div>
-                    
+                    <br>
 
-                 <!-- Button trigger modal -->
-<button class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">
-  Join Us!
-</button>
+                <!-- Button trigger modal -->
+                    <button class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">
+                    Join Us!
+                    </button>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Intrest Form</h4>
-      </div>
-      <div class="modal-body">
-        <!----EMAIL HERE???---------------------------------------------->
-        <form action="MAILTO:benkraw@umich.edu" method="post" enctype="text/plain">
-<font size="4" color="navy">Name:<br>
-<input type="text" name="name" value="Name..."><br>
-E-mail:<br>
-<input type="text" name="mail" value="Email..."><br>
-Year:<br>
-                            <input type="radio" name="year" value="freshman"> Freshman
-                              <input type="radio" name="year" value="sophmore"> Sophmore
-                                <input type="radio" name="year" value="junior"> Junior
-                                  <input type="radio" name="year" value="senior"> Senior
- </font>
- <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Close</button>
-        <input type="submit" value="Submit" class="btn-info btn">
-      </div>
-
-</form>
-              
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">Intrest Form</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- EMAIL HERE??? -->
+                                    <form action="MAILTO:benkraw@umich.edu" method="post" enctype="text/plain">
+                                        <font size="4" color="navy">Name:<br>
+                                            <input type="text" name="name" value="Name..."><br>
+                                            E-mail:<br>
+                                            <input type="text" name="mail" value="Email..."><br>
+                                            Year:<br>
+                                            <input type="radio" name="year" value="freshman"> Freshman
+                                            <input type="radio" name="year" value="sophmore"> Sophmore
+                                            <input type="radio" name="year" value="junior"> Junior
+                                            <input type="radio" name="year" value="senior"> Senior
+                                        </font>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Close</button>
+                                            <input type="submit" value="Submit" class="btn-info btn">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
                 </center>  
             </section>
 <!---//////////////////////////////////////////////////////////////////////////////////////
@@ -203,7 +207,6 @@ Year:<br>
 ///////////////////////////////////////////////////////////////////////////////////////////-->
             <section id="members">
 
-<!-- example for kate -->
                 <div class="page-header" id="members-header">
                     <h1 class="pageheader">
                         <b><font id="mem-hdr-font" >Members</font></b>
@@ -220,7 +223,7 @@ Year:<br>
                 </div>
 
                 <div id="active-names" class="mem-list">
-                    <ul id="bx-pager" class="mem-list"> <!---- Drop down menu of each person? ---->
+                    <ul id="bx-pager" class="mem-list"> <!-- Drop down menu of each person? -->
                         <li class="name" data-slide-index="0">dom</li>
                         <li class="name" data-slide-index="1">greg</li>
                         <li class="name" data-slide-index="2">ben</li>
@@ -246,18 +249,20 @@ Year:<br>
             </div>
 
         </section>
+
+<!--         <section id="events">
+            <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=umich.edu_slf0shn0ott48uiegpr8uth3h4%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </section> -->
+
 <!--/////////////////NAV-BAR//////////////////////-->
-          <nav class="nav-bar">
+        <nav class="nav-bar">
+            <a href="https://twitter.com/KappaThetaPi" class="twitter-hover social-slide"></a>
+            <a href="https://www.facebook.com/groups/345015858877204/" class="facebook-hover social-slide"></a>
+            <a href="http://www.linkedin.com/groups?gid=4661089" class="linkedin-hover social-slide"></a>
             <ul class="internal-links">
-            <div class="slidething">
-                <a href="https://twitter.com/KappaThetaPi" class="twitter-hover social-slide"></a>
-                <a href="https://www.facebook.com/groups/345015858877204/" class="facebook-hover social-slide"></a>
-                <a href="http://www.linkedin.com/groups?gid=4661089" class="linkedin-hover social-slide"></a>
-              <li class="link-internal">Home</li>
-              <li class="link-internal">Rush</li>
-              <li class="link-internal">Members</li>
-            </div>
-            
+                <li class="link-internal">Home</li>
+                <li class="link-internal">Rush</li>
+                <li class="link-internal">Members</li>
             </ul>                        
         </nav>
 
@@ -265,17 +270,12 @@ Year:<br>
 </html>
 
 <script src="http://platform.twitter.com/widgets.js" id="twitter-wjs"></script>
-<script src="vendor/js/jquery-2.0.3.min.js" type="text/javascript"></script>
-<script src="vendor/js/jquery.bxslider.min.js" type="text/javascript"></script>
-<script src="vendor/js/jquery.ascensor.min.js" type="text/javascript"></script>  
-<script src="vendor/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="vendor/js/jquery.fitvids.js"></script>
-<script>
-  $(document).ready(function(){
-    // Target your .container, .wrapper, .post, etc.
-    $(".vendor").fitVids();
-  });
-</script>
+<script src="lib/js/jquery-2.0.3.min.js" type="text/javascript"></script>
+<script src="lib/js/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="lib/js/jquery.ascensor.min.js" type="text/javascript"></script>  
+<script src="lib/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="lib/js/jquery.fitvids.js"></script>
 <script src="js/index.js" type="text/javascript"></script>
 <script src="js/rush.js" type="text/javascript"></script>
 <script src="js/members.js" type="text/javascript"></script>
+<!-- <script src="http://localhost:35729/livereload.js" type="text/javascript"></script> -->
