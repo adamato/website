@@ -1,5 +1,4 @@
 body{
-	padding-top:50px;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 .pageheader{
@@ -107,6 +106,7 @@ li.link-internal:hover {
 /*slide the nav*/
 #ascensor {
 	overflow: hidden;
+	margin: 0;
 }
 
 ul.nav {
