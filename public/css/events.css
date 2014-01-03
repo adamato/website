@@ -1,0 +1,14 @@
+#event-header{
+	border-bottom:20px solid #18FF18 !important;
+}
+
+#evt-hdr-font{
+	font-size: 75px;
+	color: #485FFF;
+}
+
+#calendar{
+	margin:auto;
+	width:80%;
+	height:70%;
+}

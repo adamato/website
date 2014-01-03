@@ -1,11 +1,11 @@
-var ascensor = $('#ascensor').ascensor({direction:"x",ascensorFloorName:['','RUSH','MEMBERS'],loop:false,time:100,childType:'section'});
+var ascensor = $('#ascensor').ascensor({direction:"x",ascensorFloorName:['','RUSH','EVENTS'],loop:false,time:100,childType:'section'});
 
 $(".internal-links li").click(function(event, index) {
 	ascensor.trigger("scrollToStage", $(this).index());
 });
 
 // $(".internal-links li").hover(function(event, index) {
-// 	ascensor.trigger("scrollToStage", $(this).index());
+//	ascensor.trigger("scrollToStage", $(this).index());
 // });   
 
 $(".video").fitVids();
