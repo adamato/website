@@ -70,36 +70,60 @@ iframe.vid {
 
 nav {
 	position: fixed;
-	text-align: center;
 	width: 100%;
 }
 
 .internal-links{
 	position: absolute; 
-	width: 1850px; 
+	width: 100%; 
 	opacity: .8;
 	background: black;
 }
 
 
 li.link-internal {
-	display: inline-block; 
-	zoom: 1;
-	*display: inline;
-	padding: 18px;
+	list-style-type: none;
+	padding-top: 9px;
+	padding-bottom: 9px;
 	margin-top: auto;
+	margin-left: 0;
 	color: #19ff19;
-	width: 180px;
-	height: 68px;
-	border-right: 3px solid yellow;
+	width: 20%;
+	height: 100%;
+	border-right: 3px solid #616D7E;
 	font-size: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }   
 
 li.link-internal:hover {
 	color: blue;
 	cursor: pointer;
 	cursor: hand;
-}   
+} 
+
+div.quote1 {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	width: 20%;
+	margin-top: auto;
+	margin-left: 0;
+	font-size: 20px;
+	font-family: 'Petit Formal Script', cursive;
+}  
+
+div.quote2 {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	width: 20%;
+	margin-top: auto;
+	margin-left: 0;
+	font-size: 20px;
+	font-family: 'Petit Formal Script', cursive;
+} 
+
+.lefter {
+	float: left;
+}
 
 /*slide the nav*/
 #ascensor {
@@ -109,6 +133,20 @@ li.link-internal:hover {
 
 ul.nav {
 	width: 100%;
+}
+
+
+/* 855 px add media*/
+
+@media all and (max-width: 855px) {
+  div.quote1, div.quote2 {
+  	display: none;
+  }
+
+  li.link-internal {
+  	width: 33.33333%;
+  }
+
 }
 
 
