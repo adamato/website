@@ -1,3 +1,8 @@
 .DS_Store
 node_modules
 .nodemonignore
+notes.txt
+public/magicline.html
+public/animate-color.html
+public/nav.html
+public/top.html

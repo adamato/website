@@ -3,18 +3,20 @@
 }
 
 #rush-header{
-	border-bottom:20px solid greenyellow !important;
+	border-bottom:20px solid greenyellow;
+	padding-top: 30px; 
 }
 
 #rush-hdr-font{
-	font-size: 75px;
+	font-size:5em;
 	color: darkmagenta;
+	font-weight: bold;
 }
 
-#this-carousel-id{
-	width:400px !important;
+#buzzword-carousel{
+	width:100%;
 }
 
-#interestForm{
+#interest-form{
 	text-align: justify;
 }

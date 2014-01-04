@@ -1,191 +1,177 @@
+.ktp-fade {
+	color: #18FF18;  
+	-webkit-animation: ktp-fade 30s infinite linear; 
+	-moz-animation: ktp-fade 30s infinite linear; 
+}
+@-webkit-keyframes ktp-fade {
+    0%		{ color: #18FF18; } 
+    50%		{ color: #485FFF; }
+}
+@-moz-keyframes ktp-fade {
+    0%		{ color: #18FF18; } 
+    50% 	{ color: #485FFF; }
+}
+
+.rev-fade {
+	border-color: #18FF18;  
+	-webkit-animation: rev-fade 30s infinite linear; 
+	-moz-animation: rev-fade 30s infinite linear; 
+}
+@-webkit-keyframes rev-fade {
+    0%		{ border-color: #485FFF; }
+    50%		{ border-color: #18FF18; } 
+}
+@-moz-keyframes rev-fade {
+    0%		{ border-color: #485FFF; }
+    50%		{ border-color: #18FF18; } 
+}
+
+
 body{
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
-.pageheader{
-	font-weight:lighter;
-	font-size:5em;
-	margin-right:auto;
-	margin-left:auto;
-	padding-top: 20px; 
+	position: absolute;
+
 }
 
-#dotted{
-	border-top:3px dotted #eeeeee;
-	width:80%;
-	margin-right:auto;
-	margin-left:auto;
+/*scrollbar, from http://css-tricks.com/examples/WebKitScrollbars/ */
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
 }
-
-.dev-design{
-	margin-top:5em;
-	margin-left:auto; 
-	margin-right:auto;
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
-
-#feed{
-	position:relative;
-	margin-left:60%;
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
-
-#idx-header{
-	border: none;
-}
-
-.container{
-	color: #666;
-}
-
-.video {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	max-height: 500px;
-	width: 80%;
-  	padding: 2%;
-
-  	margin-bottom: 2em;
-}
-
-iframe.vid {
-	/*fixed height...?*/
-	max-height: 450px !important;
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,255,255,0.4); 
 }
 
 
-#home {
-	background: #666 url('../img/hexabump.png');
-	background-repeat: repeat;
+/******************************* NAV *******************************/
+#ascensor {
+    overflow: hidden;
+    z-index: -100;
 }
 
-
-#members {
-	background: #B3CE4A;
+#nav-bar {
+    position: fixed;
+    z-index: 10;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    background: black;
+    opacity: .8;
+    font-size: 20px; 
 }
 
-#events {
-	background: white url('../img/light_wool.png');
-	background-repeat: repeat;
-}
-
-nav {
-	position: fixed;
-	width: 100%;
-}
-
-.internal-links{
-	position: absolute; 
-	width: 100%; 
-	opacity: .8;
-	background: black;
-	text-align: center;
-}
-
-
-li.link-internal {
-	list-style-type: none;
-	padding-top: 9px;
-	padding-bottom: 9px;
-	margin-top: auto;
-	margin-left: 0;
-	color: #19ff19;
-	width: 20%;
-	height: 100%;
-	border-right: 3px solid #616D7E;
-	font-size: 20px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	float: left;
+.nav-link {
+    float: left;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #19ff19;
+    height: 100%;
+    width: 20%;
+    border-right: 3px solid #616D7E;
 }   
 
-li.link-internal:hover {
-	color: blue;
-	cursor: pointer;
-	cursor: hand;
+.nav-link:hover {
+    color: blue;
+    cursor: pointer;
+    cursor: hand;
 } 
 
-div.quote1 {
-	padding-top: 9px;
-	padding-bottom: 9px;
-	width: 20%;
-	margin-top: auto;
-	margin-left: 0;
-	font-size: 20px;
-	font-family: 'Petit Formal Script', cursive;
-	float: left;
-	color: #616D7E;
-}  
-
-div.quote2 {
-	padding-top: 9px;
-	padding-bottom: 9px;
-	width: 20%;
-	margin-top: auto;
-	margin-left: 0;
-	font-size: 20px;
-	font-family: 'Petit Formal Script', cursive;
-	float: left;
-	color: #616D7E;
+.quote {
+    float: left;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    height: 100%;
+    width: 20%;
+    color: #616D7E;
+    font-family: 'Petit Formal Script', cursive;
 } 
 
-
-/*slide the nav*/
-#ascensor {
-	overflow: hidden;
-	margin: 0;
+.quote-l {
+    border-right: 3px solid #616D7E;
+    font-size: 23px;
 }
-
-ul.nav {
-	width: 100%;
-}
-
 
 /* 855 px add media*/
-
 @media all and (max-width: 855px) {
-  div.quote1, div.quote2 {
-  	display: none;
-  }
+	.quote{
+		display: none;
+	}
+	div.nav-link {
+		width: 33.333%;
+	}
+}
+/******************************* /NAV *******************************/
 
-  li.link-internal {
-  	width: 33.33333333333333%;
-  }
 
+/******************************* HOME ******************************/
+#home-header{
+	color: #18FF18;
+	border-bottom:20px solid #458FFF;
+	padding-top: 30px; 
 }
 
+#home-hdr-font{
+	font-size:5em;
+	font-weight: bold;
+	font-family: Trebuchet, Arial, Helvetica, sans-serif;
+}
+
+#home {
+	background: url('../img/hexabump.png');
+	background-repeat: repeat;
+}
+
+#vid {
+	width: 100%;
+	height: 500px;
+}
+
+
+/******************************* /HOME *****************************/
 
 .social-slide {
-  height: 48px;
-  width: 48px;
-  margin: 10px;
-  float: left;
+	height: 48px;
+	width: 48px;
+	margin: 10px;
 
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  -ms-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-  cursor:pointer;
-  margin-top: 10px;
-  -moz-box-shadow:inset -7px -4px 22px #000000;
-  -webkit-box-shadow:inset -7px -4px 22px #000000;
-  box-shadow:inset -7px -4px 22px #000000;
-  
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	cursor:pointer;
+	-moz-box-shadow:inset -7px -4px 22px #000000;
+	-webkit-box-shadow:inset -7px -4px 22px #000000;
+	box-shadow:inset -7px -4px 22px #000000;
+	background-color: blue;
 }
 .social-slide:hover {
-  background-position: 0px -48px;
+	background-position: 0px -48px;
 }
-
 .twitter-hover{
-  background-color: blue;
-  background-image:url('../img/twitter-hover.png');
+	background-image:url('../img/twitter-hover.png');
 }
 .instagram-hover{
-  background-image:url('../img/instagram-hover.png');
+	background-image:url('../img/instagram-hover.png');
 }
 .linkedin-hover{
-  background-color: blue;
-  background-image:url('../img/linkedin-hover.png');
+	background-image:url('../img/linkedin-hover.png');
 }
 .facebook-hover{
-  background-color: blue;
-  background-image:url('../img/facebook-hover.png');
+	background-image:url('../img/facebook-hover.png');
 }
