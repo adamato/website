@@ -84,9 +84,8 @@ nav {
 
 
 li.link-internal {
-	display: inline-block; 
-	zoom: 1;
-	*display: inline;
+	float: left;
+	list-style-type: none;
 	padding-top: 9px;
 	padding-bottom: 9px;
 	margin-top: auto;
