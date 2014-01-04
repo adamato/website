@@ -1,5 +1,5 @@
 #rush{
-	text-align: center;
+	background: #71B5E5;
 }
 
 #rush-header{
@@ -15,7 +15,6 @@
 	width:400px !important;
 }
 
-#interest-form{
-	background-color: yellow;
-	text-align: center;
+#interestForm{
+	text-align: justify;
 }

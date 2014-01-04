@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "express": "latest",
-    "mongoose": "latest"
+    "mongoose": "latest",
+    "formidable": "latest"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

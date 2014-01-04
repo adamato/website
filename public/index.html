@@ -31,7 +31,7 @@
                 </div>
 
                     <div class="video">
-                        <iframe class="vid" src="//player.vimeo.com/video/81946092?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe class="vid" src="//player.vimeo.com/video/81946092?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                 <div class="container">
                     <b><br><br>
@@ -133,20 +133,22 @@
                         <b><font id="rush-hdr-font">Rush KTP</font></b>
                     </h1>
                 </div>
-                <center>
-                
-                    <div id="this-carousel-id" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <p>yolo</p>
-                            </div>
-                            <div class="item">
-                                <p>dolo</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="container">
+
+                        <div id="this-carousel-id" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="item active"><p>Brotherhood</p></div>
+                                <div class="item"><p>Growth</p></div>
+                                <div class="item"><p>Passion</p></div>
+                                <div class="item"><p>Teamwork</p></div>
+                                <div class="item"><p>Entrepreneurship</p></div>
+                                <div class="item"><p>Development</p></div>
+                                <div class="item"><p>Diversity</p></div>
+                                <div class="item"><p>Innovation</p></div>
+                            </div>
+                        </div>
+
                         <h3>
                         As an accepted member of Kappa Theta Pi, you will have access to a myriad of resources and opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building and critiquing, professional photography, start-up opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.
                         </h3>
@@ -186,31 +188,23 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="myModalLabel">Intrest Form</h4>
+                                    <h4 class="modal-title" id="myModalLabel">Tell us about yourself:</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <!-- EMAIL HERE??? -->
-                                    <form action="MAILTO:benkraw@umich.edu" method="post" enctype="text/plain">
-                                        <font size="4" color="navy">Name:<br>
-                                            <input type="text" name="name" value="Name..."><br>
-                                            E-mail:<br>
-                                            <input type="text" name="mail" value="Email..."><br>
-                                            Year:<br>
-                                            <input type="radio" name="year" value="freshman"> Freshman
-                                            <input type="radio" name="year" value="sophmore"> Sophmore
-                                            <input type="radio" name="year" value="junior"> Junior
-                                            <input type="radio" name="year" value="senior"> Senior
-                                        </font>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Close</button>
-                                            <input type="submit" value="Submit" class="btn-info btn">
-                                        </div>
+                                    <form action="javascript:interested()" id="interestForm">
+                                        Name:&nbsp;<input type="text" name="name" placeholder="Name" required><br>
+                                        <br>E-mail:&nbsp;<input type="text" name="email" placeholder="Email" required><br>
+                                        <br>Year:&nbsp;<input type="radio" name="year" value="freshman"> Freshman&nbsp;|
+                                        <input type="radio" name="year" value="sophmore"> Sophmore&nbsp;|
+                                        <input type="radio" name="year" value="junior"> Junior&nbsp;|
+                                        <input type="radio" name="year" value="senior"> Senior
+                                        <br><br><input type="submit" value="Submit" class="btn-info btn">
                                     </form>
                                 </div>
                             </div><!-- /.modal-content -->
                         </div><!-- /.modal-dialog -->
                     </div><!-- /.modal -->
-                </center>  
+
             </section>
 <!---//////////////////////////////////////////////////////////////////////////////////////
 #EVENTS
@@ -222,7 +216,7 @@
                     </h1>
                 </div>
                 <div id="calendar">
-                    <iframe src="http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=umich.edu_slf0shn0ott48uiegpr8uth3h4%40group.calendar.google.com&amp;color=%23485FFF&amp;ctz=America%2FNew_York" frameborder="0" scrolling="no" height="100%" width="100%"></iframe>
+                    <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=umich.edu_ge12tdb0ffc8caqneev860m55k%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style=" border-width:0 " width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
                 </div>
             </section>
 
@@ -240,11 +234,10 @@
 
 <script src="http://platform.twitter.com/widgets.js" id="twitter-wjs"></script>
 <script src="lib/js/jquery-2.0.3.min.js" type="text/javascript"></script>
-<script src="lib/js/jquery.bxslider.min.js" type="text/javascript"></script>
 <script src="lib/js/jquery.ascensor.min.js" type="text/javascript"></script>  
 <script src="lib/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="lib/js/jquery.fitvids.js"></script>
 <script src="js/index.js" type="text/javascript"></script>
 <script src="js/rush.js" type="text/javascript"></script>
 
-<!-- <script src="http://localhost:35729/livereload.js" type="text/javascript"></script>  -->
+<script src="http://localhost:35729/livereload.js" type="text/javascript"></script>

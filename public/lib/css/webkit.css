@@ -184,11 +184,10 @@
 .ch-info-wrap {
 	top: 20px;
 	left: 20px;
-	background: #f9f9f9 url(../img/bg.jpg);
+	background: #f9f9f9;
 	box-shadow: 
 		0 0 0 20px gray, 
 		inset 0 0 3px rgba(115,114, 23, 0.8);
-
 }
 
 .ch-info > div {

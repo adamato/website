@@ -1,7 +1,10 @@
-// Tell our node to use the express module
-var express = require('express');
-// and run our server with this module.
+var express = require('express'),
+	mongo = require('mongoose'),
+	formidable = require('formidable');
 var app = express();
+mongo.connect('mongodb://localhost/interestInfo',function(){
+	console.log('Mongo connected');
+});
 
 app.use(express.logger('dev'));
 app.use(express.json());
@@ -15,6 +18,38 @@ app.use(express.static('public'));
 /*/
 app.get('/',function(req,res){
 	res.send('public/index.html');
+});
+
+
+/*/	Database init for interest form
+/*/
+var rushSchema = new mongo.Schema({
+	Name: String,
+	Email: String,
+	Year: String
+});
+
+var Rush = mongo.model('Rush', rushSchema);
+/*/
+*	process form input and store in database
+/*/
+app.post('/interest',function(req,res){
+	console.log('interested');
+	console.log(req.body);
+	var rush = new Rush({
+		Name: req.body.name,
+		Email: req.body.email,
+		Year: req.body.year
+	});
+	rush.save(function(err){
+		if(err){
+			console.log(err);
+			res.send('An error has occured processing the form');
+			return;
+		}
+		res.send(true);
+		return;
+	});
 });
 
 /*/
