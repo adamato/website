@@ -13,11 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/events.css">
         <link rel="stylesheet" type="text/css" href="lib/css/webkit.css">
         <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="lib/css/jquery.bxslider.css">
         <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/nav-bar.css"> 
-        <link rel="stylesheet" type="text/css" href="lib/css/bars.css">
         <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>   
     </head>
     <body>
@@ -164,19 +160,20 @@
                 </div>
 
                     <div class="container">
-
-                        <div id="this-carousel-id" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="item active"><p>Brotherhood</p></div>
-                                <div class="item"><p>Growth</p></div>
-                                <div class="item"><p>Passion</p></div>
-                                <div class="item"><p>Teamwork</p></div>
-                                <div class="item"><p>Entrepreneurship</p></div>
-                                <div class="item"><p>Development</p></div>
-                                <div class="item"><p>Diversity</p></div>
-                                <div class="item"><p>Innovation</p></div>
+                        <center>
+                            <div id="this-carousel-id" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item active"><p>Brotherhood</p></div>
+                                    <div class="item"><p>Growth</p></div>
+                                    <div class="item"><p>Passion</p></div>
+                                    <div class="item"><p>Teamwork</p></div>
+                                    <div class="item"><p>Entrepreneurship</p></div>
+                                    <div class="item"><p>Development</p></div>
+                                    <div class="item"><p>Diversity</p></div>
+                                    <div class="item"><p>Innovation</p></div>
+                                </div>
                             </div>
-                        </div>
+                        </center>
 
                         <h3>
                         As an accepted member of Kappa Theta Pi, you will have access to a myriad of resources and opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building and critiquing, professional photography, start-up opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.
@@ -203,36 +200,35 @@
                             <li>Application Due: January 24 ((attach application))</li>
                             <li>Interviews: February 3-5</li>
                         </ul>   
+                        <br>
+                        <button class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">
+                        Join Us!
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">Tell us about yourself:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="javascript:interested()" id="interestForm">
+                                            Name:&nbsp;<input type="text" name="name" placeholder="Name" required><br>
+                                            <br>E-mail:&nbsp;<input type="text" name="email" placeholder="Email" required><br>
+                                            <br>Year:&nbsp;<input type="radio" name="year" value="freshman"> Freshman&nbsp;|
+                                            <input type="radio" name="year" value="sophmore"> Sophmore&nbsp;|
+                                            <input type="radio" name="year" value="junior"> Junior&nbsp;|
+                                            <input type="radio" name="year" value="senior"> Senior
+                                            <br><br><input type="submit" value="Submit" class="btn-info btn">
+                                        </form>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    
                     </div>
-                    <br>
-
-                <!-- Button trigger modal -->
-                    <button class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">
-                    Join Us!
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="myModalLabel">Tell us about yourself:</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="javascript:interested()" id="interestForm">
-                                        Name:&nbsp;<input type="text" name="name" placeholder="Name" required><br>
-                                        <br>E-mail:&nbsp;<input type="text" name="email" placeholder="Email" required><br>
-                                        <br>Year:&nbsp;<input type="radio" name="year" value="freshman"> Freshman&nbsp;|
-                                        <input type="radio" name="year" value="sophmore"> Sophmore&nbsp;|
-                                        <input type="radio" name="year" value="junior"> Junior&nbsp;|
-                                        <input type="radio" name="year" value="senior"> Senior
-                                        <br><br><input type="submit" value="Submit" class="btn-info btn">
-                                    </form>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
 
             </section>
 <!---//////////////////////////////////////////////////////////////////////////////////////
@@ -251,13 +247,13 @@
 
 <!--/////////////////NAV-BAR//////////////////////-->
 
-    <nav class="clearfix">
+    <nav class="nav-bar">
         <ul class="internal-links">
-                <div class="quote1 lefter"><center>For The Love</center></div>
-                <li class="link-internal lefter" style="border-left: 3px solid #616D7E;"><center>HOME</center></li>
-                <li class="link-internal lefter"><center>RUSH</center></li>
-                <li class="link-internal lefter"><center>EVENTS</center></li>
-                <div class="quote2 lefter"><center>of Technology</center></div>
+            <div class="quote1 lefter">For The Love</div>
+            <li class="link-internal" style="border-left: 3px solid #616D7E;">HOME</li>
+            <li class="link-internal">RUSH</li>
+            <li class="link-internal">EVENTS</li>
+            <div class="quote2">of Technology</div>
         </ul>     
     </nav>
 

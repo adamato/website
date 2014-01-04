@@ -78,6 +78,7 @@ nav {
 	width: 100%; 
 	opacity: .8;
 	background: black;
+	text-align: center;
 }
 
 
@@ -93,6 +94,7 @@ li.link-internal {
 	border-right: 3px solid #616D7E;
 	font-size: 20px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	float: left;
 }   
 
 li.link-internal:hover {
@@ -109,6 +111,7 @@ div.quote1 {
 	margin-left: 0;
 	font-size: 20px;
 	font-family: 'Petit Formal Script', cursive;
+	float: left;
 }  
 
 div.quote2 {
@@ -119,11 +122,9 @@ div.quote2 {
 	margin-left: 0;
 	font-size: 20px;
 	font-family: 'Petit Formal Script', cursive;
+	float: left;
 } 
 
-.lefter {
-	float: left;
-}
 
 /*slide the nav*/
 #ascensor {

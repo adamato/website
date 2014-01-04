@@ -2,9 +2,7 @@ var express = require('express'),
 	mongo = require('mongoose'),
 	formidable = require('formidable');
 var app = express();
-mongo.connect('mongodb://localhost/interestInfo',function(){
-	console.log('Mongo connected');
-});
+mongo.connect('mongodb://localhost/interestInfo');
 
 app.use(express.logger('dev'));
 app.use(express.json());
