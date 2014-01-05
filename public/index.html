@@ -196,14 +196,16 @@
                                     <h4 class="modal-title" id="myModalLabel">Tell us about yourself:</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="javascript:interested()" id="interest-form">
+                                    <form action="javascript:interested()" id="interest-form" method="post">
                                         Name:&nbsp;<input type="text" name="name" placeholder="Name" required><br>
                                         <br>E-mail:&nbsp;<input type="text" name="email" placeholder="Email" required><br>
                                         <br>Year:&nbsp;<input type="radio" name="year" value="freshman"> Freshman&nbsp;|
                                         <input type="radio" name="year" value="sophmore"> Sophmore&nbsp;|
                                         <input type="radio" name="year" value="junior"> Junior&nbsp;|
                                         <input type="radio" name="year" value="senior"> Senior
-                                        <br><br><input type="submit" value="Submit" class="btn-info btn">
+                                        <br><br>
+                                        <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Close</button>
+                                        <input type="submit" value="Submit" class="btn-info btn">
                                     </form>
                                 </div>
                             </div>
