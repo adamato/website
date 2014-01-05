@@ -5,7 +5,7 @@ $("#nav-bar div").click(function(event, index) {
 	ascensor.trigger("scrollToStage", $(this).index()-1);
 });
 
-$(".video").fitVids();
+$(".vendor").fitVids();
 
 ascensor.on("scrollStart", function(event, floor){
 	$("#nav-bar div").removeClass("selected");
