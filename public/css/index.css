@@ -13,7 +13,7 @@
 }
 
 .rev-fade {
-	border-color: #18FF18;  
+	border-color: #485FFF;  
 	-webkit-animation: rev-fade 30s infinite linear; 
 	-moz-animation: rev-fade 30s infinite linear; 
 }
@@ -34,19 +34,16 @@ body{
 }
 
 /*scrollbar, from http://css-tricks.com/examples/WebKitScrollbars/ */
-/* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
 }
  
-/* Track */
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -61,7 +58,6 @@ body{
 /******************************* NAV *******************************/
 #ascensor {
     overflow: hidden;
-    z-index: -100;
 }
 
 #nav-bar {
@@ -121,7 +117,7 @@ body{
 /******************************* HOME ******************************/
 #home-header{
 	color: #18FF18;
-	border-bottom:20px solid #458FFF;
+	border-bottom:20px solid #485FFF;
 	padding-top: 30px; 
 }
 

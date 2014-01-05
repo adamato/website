@@ -17,6 +17,16 @@
 	width:100%;
 }
 
+#modal-button{
+	border-style: none;
+	background-color:#19FF19;
+	color: black;
+}
+
+#myModal{
+	top:30%;
+}
+
 #interest-form{
 	text-align: justify;
 }

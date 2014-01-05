@@ -1,12 +1,9 @@
+
 var ascensor = $('#ascensor').ascensor({direction:"x",ascensorFloorName:['','RUSH','EVENTS'],loop:false,time:100,childType:'section'});
 
 $("#nav-bar div").click(function(event, index) {
 	ascensor.trigger("scrollToStage", $(this).index()-1);
 });
-
-// $(".internal-links li").hover(function(event, index) {
-//	ascensor.trigger("scrollToStage", $(this).index());
-// });   
 
 $(".video").fitVids();
 
