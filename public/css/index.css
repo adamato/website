@@ -67,7 +67,6 @@ body{
     width: 100%;
     text-align: center;
     background: black;
-    opacity: .8;
     font-size: 20px; 
 }
 
@@ -86,6 +85,10 @@ body{
     cursor: pointer;
     cursor: hand;
 } 
+
+.selected {
+    color:gold;
+}
 
 .quote {
     float: left;
