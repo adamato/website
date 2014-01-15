@@ -1,7 +1,7 @@
 .ktp-fade {
 	color: #18FF18;  
-	-webkit-animation: ktp-fade 30s infinite linear; 
-	-moz-animation: ktp-fade 30s infinite linear; 
+	-webkit-animation: ktp-fade 20s infinite linear; 
+	-moz-animation: ktp-fade 20s infinite linear; 
 }
 @-webkit-keyframes ktp-fade {
     0%		{ color: #18FF18; } 
@@ -14,8 +14,8 @@
 
 .rev-fade {
 	border-color: #485FFF;  
-	-webkit-animation: rev-fade 30s infinite linear; 
-	-moz-animation: rev-fade 30s infinite linear; 
+	-webkit-animation: rev-fade 20s infinite linear; 
+	-moz-animation: rev-fade 20s infinite linear; 
 }
 @-webkit-keyframes rev-fade {
     0%		{ border-color: #485FFF; }
@@ -33,7 +33,7 @@ body{
 
 }
 
-/*scrollbar, from http://css-tricks.com/examples/WebKitScrollbars/ */
+/*scrollbar, from http://css-tricks.com/examples/WebKitScrollbars/ 
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -53,11 +53,12 @@ body{
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,255,255,0.4); 
 }
-
+*/
 
 /******************************* NAV *******************************/
 #ascensor {
     overflow: hidden;
+    background: url('../img/KTPBackground22.png');
 }
 
 #nav-bar {
@@ -66,7 +67,7 @@ body{
     height: 48px;
     width: 100%;
     text-align: center;
-    background: black;
+    background: #0B1740;
     font-size: 20px; 
 }
 
@@ -113,6 +114,9 @@ body{
 	div.nav-link {
 		width: 33.333%;
 	}
+    h1 {
+        font-size: 10px;
+    }
 }
 /******************************* /NAV *******************************/
 
@@ -120,18 +124,20 @@ body{
 /******************************* HOME ******************************/
 #home-header{
 	color: #18FF18;
-	border-bottom:20px solid #485FFF;
+	border-bottom:5px solid #0B1740;
 	padding-top: 30px; 
+    background-color: rgba(250,250,250,0.9);
+    width: 100%;
 }
 
 #home-hdr-font{
-	font-size:5em;
-	font-weight: bold;
-	font-family: Trebuchet, Arial, Helvetica, sans-serif;
+	font-size:10em;
+	font-weight: normal;
+	font-family: Trebuchet, Arial, Helvetica, "Lucida Grande", sans-serif;
+    font: "Lucida Grande";
 }
 
 #home {
-	background: url('../img/hexabump.png');
 	background-repeat: repeat;
 }
 
@@ -139,7 +145,7 @@ body{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	max-height: 500px;
+	max-height: 450px;
 	width: 80%;
   	padding: 2%;
 
@@ -148,10 +154,22 @@ body{
 
 iframe.vid {
 	/*fixed height...?*/
-	max-height: 450px !important;
+	max-height: 500px !important;
 }
 
+#white-body{
+    color: #0B1740;
+    background-color: rgba(250,250,250,0.9);
+    width: 90%;
+    text-align: justify;
+}
 
+#blue-body{
+    color: #ffffff;
+    background-color: rgba(11,23,64,0.9);
+    width: 90%;
+    text-align: justify;
+}
 
 
 /******************************* /HOME *****************************/

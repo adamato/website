@@ -1,17 +1,4 @@
-#rush{
-	background: #71B5E5;
-}
 
-#rush-header{
-	border-bottom:20px solid greenyellow;
-	padding-top: 30px; 
-}
-
-#rush-hdr-font{
-	font-size:5em;
-	color: darkmagenta;
-	font-weight: bold;
-}
 
 #buzzword-carousel{
 	width:100%;
@@ -19,8 +6,8 @@
 
 #modal-button{
 	border-style: none;
-	background-color:#19FF19;
-	color: black;
+	background-color:#0B1740;
+	color: white;
 }
 
 #myModal{
