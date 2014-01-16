@@ -2,6 +2,7 @@
 
 #buzzword-carousel{
 	width:100%;
+	font-size: 5em;
 }
 
 #modal-button{
@@ -11,7 +12,8 @@
 }
 
 #myModal{
-	top:30%;
+	top:25%;
+	overflow: hidden;
 }
 
 #interest-form{
