@@ -206,12 +206,12 @@ iframe.vid {
 .facebook-hover{
     background-image:url('../img/facebook-hover.png');
 }
-
-#sociallinx{float:center;}
+#footerinfo{float:left; display:inline;}
+#sociallinx{float:right; display:inline;}
 footer{
     bottom:0%;
     position:fixed;
-    background-color:rgba(0,0,0,0.75);
+    background-color:#0B1740;
     z-index:10;
     width:100%;
     text-align:center;

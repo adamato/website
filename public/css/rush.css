@@ -1,19 +1,8 @@
-
-
-#buzzword-carousel{
-	width:100%;
-	font-size: 5em;
-}
-
+#buzzword-carousel{width:9em; font-size:3em;}
 #modal-button{
-	border-style: none;
+	border-style:none;
 	background-color:#0B1740;
-	color: white;
-}
-
-#myModal{
-	top:25%;
-	overflow: hidden;
+	color:#ffffff;
 }
 
 #interest-form{
@@ -27,4 +16,8 @@
     border-radius: 1em;	
     padding: 2px;
 }
+
+
+#myModal{top:25%; overflow:hidden;}
+#interest-form{text-align:justify;}
 
