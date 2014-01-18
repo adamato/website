@@ -58,7 +58,7 @@ body{
 /******************************* NAV *******************************/
 #ascensor {
     overflow: hidden;
-    background: url('../img/KTPBackground22.png');
+    background: url('../img/KTPBackgroundJJ.png');
 }
 
 #nav-bar {
@@ -110,7 +110,7 @@ body{
 /* 855 px add media*/
 @media all and (max-width: 855px) {
 	.quote{
-		display: none;
+		display: none;nav-bar
 	}
 	div.nav-link {
 		width: 33.333%;
@@ -127,7 +127,6 @@ body{
 	color: #18FF18;
 	border-bottom:20px solid #0B1740;
 	padding-top: 30px; 
-    background-color: rgba(250,250,250,0.9);
     width: 100%;
 }
 
