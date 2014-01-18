@@ -1,10 +1,8 @@
-#events {
-	background-repeat: repeat;
-}
-
+#events{background-repeat:repeat;}
 
 #calendar{
 	margin:auto;
+	margin-top:8em;
 	width:75%;
 	height:65%;
 }

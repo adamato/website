@@ -10,20 +10,6 @@
 	text-align:center;
 	letter-spacing:0.05em;
 }
-
-#interest-form{
-	text-align: justify;
-}
-
-.infoText {
-    color: #0B1740;
-    width: 98%;
-    text-align: center;
-    border-radius: 1em;	
-    padding: 2px;
-}
-
-
+#interest-form{text-align:justify;}
 #myModal{top:25%; overflow:hidden;}
 #interest-form{text-align:justify;}
-
