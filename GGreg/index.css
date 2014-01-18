@@ -40,6 +40,20 @@
 /*    transition: 1.5s steps(5, start);
 */ }
 
+.navsquare {
+  background-color: #19ff19;
+  height: 90px;
+  width: 90px;
+  float: left;
+  margin: 5px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font: Helvetica;
+  position: relative;
+
+}
+
  .square:hover {
       background-color: #458fff;
 

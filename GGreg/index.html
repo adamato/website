@@ -14,13 +14,8 @@
 
 $(document).ready(function () {
     
-    $("#about").click(function () {
-    	$("#about").css('color', 'gold');
-    	$("#hide1 .square").slideUp("slow");
-        $("#hide1").fadeOut(300, hideR2);
-	});
-    $("#rush").click(function () {
-    	$("#rush").css('color', 'gold');
+    $(".navsquare").click(function () {
+    	$(this).css('color', 'gold');
     	$("#hide1 .square").slideUp("slow");
         $("#hide1").fadeOut(300, hideR2);
 	});
@@ -80,16 +75,16 @@ $(document).ready(function () {
 
 	<div class="bandnav" id="nav">
 		<div class="square" id="hide6"></div>
-		<div class="square" id="about"><br><br>ABOUT</div>
+		<div class="navsquare" id="about"><br><br>ABOUT</div>
 		<div class="space"></div>
 <!-- 		<div class="space"></div>
- -->		<div class="square" id="rush"><br><br>RUSH</div>
+ -->		<div class="navsquare" id="rush"><br><br>RUSH</div>
 		<div class="square" id="hide7"></div>
-		<div class="square" id="members"><br><br>MEMBERS</div>
+		<div class="navsquare" id="members"><br><br>MEMBERS</div>
 		<div class="space"></div>
-		<div class="square" id="blog"><br><br>BLOG</div>
+		<div class="navsquare" id="blog"><br><br>BLOG</div>
 		<div class="space"></div>
-		<div class="square" id="contact"><br><br>CONTACT</div>
+		<div class="navsquare" id="contact"><br><br>CONTACT</div>
 		<div class="space"></div>
 	</div>
 
