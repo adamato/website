@@ -133,8 +133,12 @@ body{
 #home-hdr-font{
 	font-size:8.5em;
 	font-weight: normal;
-	font-family: Trebuchet, Arial, Helvetica, "Lucida Grande", sans-serif;
-    font: "Lucida Grande";
+	font-family: Trebuchet MS, sans-serif;
+    padding-left:0.1em;
+}
+
+@media only screen and (max-width:900px){
+    #home-hdr-font{font-size:6em;}
 }
 
 #home {
@@ -142,13 +146,12 @@ body{
 }
 
 .vendor {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	max-height: 500px;
-	width: 80%;
-  	padding: 2%;
-  	margin-bottom: 2em;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	max-height:500px;
+	width:80%;
+  	padding:1em;
 }
 
 iframe.vid {
@@ -166,10 +169,10 @@ iframe.vid {
 
 #blue-body{
     color: #ffffff;
-    background-color: rgba(11,23,64,0.9);
-    width: 90%;
-    text-align: center;
-    border-radius: 10px;
+    background-color: rgba(11,23,64,0.8);
+    width: 88%;
+    text-align: justify;
+    border-radius: 1em;
 }
 
 
