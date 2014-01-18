@@ -2,6 +2,17 @@ body {
 	background: black;
 }
 
+#kappathetapitext{
+	font-family:Trebuchet MS, sans-serif;
+	font-size:3.5em;
+	letter-spacing:0.7em;
+	padding:0.5em;
+	color:#FFFFFF;
+	text-align:center;
+	text-transform:uppercase;
+	width:100%;
+	position:absolute;
+}
 
 .square {
 	width: 80px;
@@ -86,13 +97,9 @@ body {
   -webkit-animation-iteration-count: infinite;
 }
 
-
-
 .presser > p {
 	margin: 0;
 	padding-top: 1.7em;
 	text-align: center;
 	text-decoration: bold;
 }
-
-
