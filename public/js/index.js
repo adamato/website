@@ -2,7 +2,7 @@
 var ascensor = $('#ascensor').ascensor({direction:"x",ascensorFloorName:['','RUSH','EVENTS'],loop:false,time:400,childType:'section'});
 
 $('#nav-bar div').click(function(event, index) {
-	ascensor.trigger('scrollToStage', $(this).index()-1);
+	ascensor.trigger('scrollToStage', $(this).index());
 });
 
 $(".vendor").fitVids();

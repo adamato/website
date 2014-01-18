@@ -48,7 +48,18 @@ body{
 ::-webkit-scrollbar-thumb:window-inactive{background:rgba(255,255,255,0.4);}
 
 /******************************* NAV *******************************/
-#ascensor{overflow:hidden; background:url('../img/KTPBackgroundJJ.png');}
+#ascensor{
+    overflow:hidden;
+    background-color:rgba(0,0,0,0.3);
+    /*background:url('../img/KTPBackgroundJJ.png');*/
+}
+
+.comingsoon{
+    text-align:center;
+    padding-top:5em;
+    font-size:5em;
+    color:#FFFFFF;
+}
 
 #nav-bar {
     position: fixed;
@@ -67,7 +78,7 @@ body{
     padding-bottom: 9px;
     color: white;
     height: 100%;
-    width: 20%;
+    width: 16.666666666666667%;
     border-right: 3px solid #616D7E;
 }   
 
@@ -100,7 +111,7 @@ body{
 		display: none;nav-bar
 	}
 	div.nav-link {
-		width: 33.333%;
+		width: 16.6666666667%;
 	}
     h1 {
         font-size: 10px;
@@ -151,6 +162,7 @@ iframe.vid {
     background-color:rgba(250,250,250,0.75);
     float:left;
     margin-left:7%;
+    height:27em;
 }
 
 #white-body-2{
@@ -159,6 +171,7 @@ iframe.vid {
     background-color:rgba(250,250,250,0.75);
     float:right;
     margin-right:7%;
+    height:27em;
 }
 
 .bodytext{
