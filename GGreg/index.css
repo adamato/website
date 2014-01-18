@@ -1,0 +1,122 @@
+
+@media only screen and (min-width: 1100px) {
+
+ .container {
+  height: 100%;
+  width: 100%;
+ }
+
+ .band {
+  height: 100px;
+  width: 1100px;
+  position: relative;
+/*  top: 10%;
+*/  background-color: #ffffff;
+  transition: 1.5s;
+  margin: 0 auto;
+ }
+
+.bandnav {
+  height: 100px;
+  width: 1100px;
+  position: relative;
+/*  top: 10%;
+*/  background-color: #ffffff;
+  transition: 1.5s;
+  margin: 0 auto;
+ }
+
+ .square {
+  background-color: #19ff19;
+  height: 90px;
+  width: 90px;
+  float: left;
+  margin: 5px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font: Helvetica;
+  position: relative;
+/*    transition: 1.5s steps(5, start);
+*/ }
+
+ .square:hover {
+      background-color: #458fff;
+
+ }
+
+ /*#about {
+    background-color: #458fff;
+ }
+ #about:hover {
+      background-color: #19ff19;
+
+ }
+
+ #rush {
+    background-color: #458fff;
+
+ }
+
+ #members {
+    background-color: #458fff;
+
+ }
+
+#blog {
+    background-color: #458fff;
+
+}
+
+#contact {
+      background-color: #458fff;
+
+}
+*/
+ .space {
+  background-color: #ffffff;
+  height: 90px;
+  width: 90px;
+  float: left;
+  margin: 5px;
+ }
+
+  .triBR {
+  width: 0;
+  height: 0;
+  border-bottom: 90px solid #19ff19;
+  border-left: 90px solid transparent;
+  margin: 5px;
+  float: left;
+ }
+
+  .triTR {
+  width: 0;
+  height: 0;
+  border-top: 90px solid #19ff19;
+  border-left: 90px solid transparent;
+  margin: 5px;
+  float: left;
+ }
+
+  .triBL {
+  width: 0;
+  height: 0;
+  border-bottom: 90px solid #19ff19;
+  border-right: 90px solid transparent;
+  margin: 5px;
+  float: left;
+ }
+
+  .triTL {
+  width: 0;
+  height: 0;
+  border-top: 90px solid #19ff19;
+  border-right: 90px solid transparent;
+  margin: 5px;
+  float: left;
+ }
+
+}
+
+
