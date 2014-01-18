@@ -1,0 +1,168 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+    .container { 
+        position: relative; 
+        top: 150px;
+        width: 1100px;
+        margin: 0 auto;
+
+
+    }
+
+    /*  1150 by 620    */
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: auto; margin-right: auto; }
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns { 
+        width: 100px;  
+    }
+
+
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 1150px), (max-height: 620px) {
+        .container { 
+        position: relative; 
+        top: 100px;
+        width: 1000px;
+        margin: 0 auto;
+        }
+
+    .container .one.column,
+    .container .one.columns { 
+        width: 90px;  
+    } 
+
+    .square {
+        width: 70px;
+        height: 70px;
+    }
+
+    .squareTight {
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .blankSquare {
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .triangleTopLeft {
+        border-top: 70px solid green;
+        border-right: 70px solid transparent;
+    }
+
+
+    .triangleTopRight {
+        border-top: 70px solid green;
+        border-left: 70px solid transparent;
+    }
+
+
+
+    .triangleBottomLeft {
+        border-bottom: 70px solid green;
+        border-right: 70px solid transparent;
+    }
+
+
+    .triangleBottomRight {
+        border-bottom: 70px solid green;
+        border-left: 70px solid transparent;
+
+    }           
+
+    }
+
+    @media only screen and (max-width: 1112px), (max-height: 570px) {
+        .container { 
+        top: 70px;
+        }        
+
+    }    
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 470px */
+
+    @media only screen and (min-width: 470px) and (max-width: 767px) {
+
+    }
+
+    @media only screen and (min-width: 1234px) and (min-height:700px) {
+
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

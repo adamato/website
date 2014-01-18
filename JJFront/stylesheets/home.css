@@ -1,0 +1,80 @@
+.square {
+	width: 80px;
+	height: 80px;
+	background: green;
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+.squareTight {
+	width: 80px;
+	height: 80px;
+	background: green;
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+.blankSquare {
+	width: 80px;
+	height: 80px;
+	background: none;	
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+.triangleTopLeft {
+	width: 0;
+	height: 0;
+	border-top: 80px solid green;
+	border-right: 80px solid transparent;
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+
+.triangleTopRight {
+	width: 0;
+	height: 0;
+	border-top: 80px solid green;
+	border-left: 80px solid transparent;
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+
+
+.triangleBottomLeft {
+	width: 0;
+	height: 0;
+	border-bottom: 80px solid green;
+	border-right: 80px solid transparent;
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+
+.triangleBottomRight {
+	width: 0;
+	height: 0;
+	border-bottom: 80px solid green;
+	border-left: 80px solid transparent;
+	margin-top: .2em;
+	margin-bottom: .2em;
+
+}
+
+.click {
+	cursor: pointer; cursor: hand;
+}
+
+
+div {
+	transition:all 1s ease;
+}
+
+div:target {
+	color:blue;
+}
+
+
+
