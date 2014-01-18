@@ -1,6 +1,4 @@
 var express = require('express'),
-	db = require('./db.js'),
-	http = require('http'),
 	clients = {};
 var app = express(), 
 	server = require('http').createServer(app), 
