@@ -1,7 +1,11 @@
+body {
+	background: black;
+}
+
+
 .square {
 	width: 80px;
 	height: 80px;
-	background: green;
 	margin-top: .2em;
 	margin-bottom: .2em;
 }
@@ -25,7 +29,7 @@
 .triangleTopLeft {
 	width: 0;
 	height: 0;
-	border-top: 80px solid green;
+	border-top: 80px solid blue;
 	border-right: 80px solid transparent;
 	margin-top: .2em;
 	margin-bottom: .2em;
@@ -35,7 +39,7 @@
 .triangleTopRight {
 	width: 0;
 	height: 0;
-	border-top: 80px solid green;
+	border-top: 80px solid blue;
 	border-left: 80px solid transparent;
 	margin-top: .2em;
 	margin-bottom: .2em;
@@ -46,7 +50,7 @@
 .triangleBottomLeft {
 	width: 0;
 	height: 0;
-	border-bottom: 80px solid green;
+	border-bottom: 80px solid blue;
 	border-right: 80px solid transparent;
 	margin-top: .2em;
 	margin-bottom: .2em;
@@ -56,7 +60,7 @@
 .triangleBottomRight {
 	width: 0;
 	height: 0;
-	border-bottom: 80px solid green;
+	border-bottom: 80px solid blue;
 	border-left: 80px solid transparent;
 	margin-top: .2em;
 	margin-bottom: .2em;
@@ -68,13 +72,18 @@
 }
 
 
-div {
-	transition:all 1s ease;
+@-webkit-keyframes greenPulse {
+  from { background-color: blue; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #19ff19; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: blue; -webkit-box-shadow: 0 0 9px #333; }
 }
 
-div:target {
-	color:blue;
-}
+/*1ABD1A*/
 
+.square  {
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+}
 
 

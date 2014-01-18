@@ -45,85 +45,96 @@
 
 	<div class="container">
 			<div class="one column">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
+				<div class="square bang"></div>
+				<div class="square bang"></div>
+				<div class="square bang"></div>
+				<div class="square bang"></div>
+				<div class="square bang"></div>
 			</div>
 			<div class="one column">
-				<div class="blankSquare"></div>
-				<div class="triangleBottomRight"></div>
-				<div class="square"><center>ABOUT</center></div>
-				<div class="triangleTopRight"></div>
-				<div class="blankSquare"></div>
+				<div class="blankSquare bang"></div>
+				<div class="triangleBottomRight bang"></div>
+				<div class="square presser"><center>ABOUT</center></div>
+				<div class="triangleTopRight bang"></div>
+				<div class="blankSquare bang"></div>
 			</div>
 			<div class="one column">
-				<div class="square"></div>
-				<div class="triangleTopLeft"></div>
-				<div class="blankSquare"></div>
-				<div class="triangleBottomLeft"></div>
-				<div class="square"></div>
+				<div class="square bang"></div>
+				<div class="triangleTopLeft bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="triangleBottomLeft bang"></div>
+				<div class="square bang"></div>
 			</div>
 			<div class="one column">
-				<div class="triangleBottomRight"></div>
-				<div class="square"></div>
-				<div class="square"><center>RUSH</center></div>
-				<div class="square"></div>
-				<div class="triangleTopRight"></div>
+				<div class="triangleBottomRight bang"></div>
+				<div class="square bang"></div>
+				<div class="square presser"><center>RUSH</center></div>
+				<div class="square bang"></div>
+				<div class="triangleTopRight bang"></div>
 			</div>
 			<div class="one column">
-				<div class="square"></div>
-				<div class="blankSquare"></div>
-				<div class="square"></div>
-				<div class="blankSquare"></div>
-				<div class="square"></div>
+				<div class="square bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="square bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="square bang"></div>
 			</div>
 			<div class="one column">
-				<div class="triangleBottomLeft"></div>
-				<div class="square"></div>
-				<a href="#first"><div id="first" class="square"><center>MEMBERS</center></div></a>
-				<div class="square"></div>
-				<div class="triangleTopLeft"></div>
+				<div class="triangleBottomLeft bang"></div>
+				<div class="square bang"></div>
+				<div class="square presser"><center>MEMBERS</center></div>
+				<div class="square bang"></div>
+				<div class="triangleTopLeft bang"></div>
 			</div>
 			<div class="one column">
-				<div class="square"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
+				<div class="square bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
 			</div>
 			<div class="one column">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"><center>BLOG</center></div>
-				<div class="square"></div>
-				<div class="square"></div>
+				<div class="square bang"></div>
+				<div class="square bang"></div>
+				<div class="square presser"><center>BLOG</center></div>
+				<div class="square bang"></div>
+				<div class="square bang"></div>
 			</div>
 			<div class="one column">
-				<div class="square"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
+				<div class="square bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
 			</div>
 			<div class="one column">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"><center>CONTACT</center></div>
-				<div class="square"></div>
+				<div class="square bang"></div>
+				<div class="square bang"></div>
+				<div class="square presser"><center>CONTACT</center></div>
+				<div class="square bang"></div>
 				<div class="square"><center>LOGIN</center></div>
 			</div>
 			<div class="one column">
-				<div class="square"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
-				<div class="blankSquare"></div>
+				<div class="square bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
+				<div class="blankSquare bang"></div>
 			</div>
 
 	</div><!-- container -->
 
+	<script src="js/standard.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function() {
+	$("div.presser").click(function(){
+        // $(".square bang").effect( "explode", 
+        //              {pieces: 9}, 500);
+		$(".bang").hide( "explode");
+      });
+	});
+	</script>
 
 <!-- End Document
 ================================================== -->
