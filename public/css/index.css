@@ -32,28 +32,20 @@ body{
 	position: absolute;
 
 }
-
-/*scrollbar, from http://css-tricks.com/examples/WebKitScrollbars/ 
-::-webkit-scrollbar {
-    width: 12px;
-}
  
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+::-webkit-scrollbar{width: 12px;}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius:10px;
+    border-radius:10px;
 }
- 
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+::-webkit-scrollbar-thumb{
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.8); 
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
 }
-::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,255,255,0.4); 
-}
-*/
+::-webkit-scrollbar-thumb:window-inactive{background:rgba(255,255,255,0.4);}
 
 /******************************* NAV *******************************/
 #ascensor {
@@ -82,15 +74,13 @@ body{
     border-right: 3px solid #616D7E;
 }   
 
-.nav-link:hover {
-    color: gold;
-    cursor: pointer;
-    cursor: hand;
+.nav-link:hover{
+    color:#19FF19;
+    cursor:pointer;
+    cursor:hand;
 } 
 
-.selected {
-    color:gold;
-}
+.selected {color:#19FF19;}
 
 .quote {
     float: left;
@@ -132,8 +122,8 @@ body{
 
 #home-hdr-font{
 	font-size:8.5em;
-	font-weight: normal;
-	font-family: Trebuchet MS, sans-serif;
+	font-weight:normal;
+	font-family:Trebuchet MS, sans-serif;
     padding-left:0.1em;
 }
 
@@ -141,17 +131,16 @@ body{
     #home-hdr-font{font-size:6em;}
 }
 
-#home {
-	background-repeat: repeat;
-}
+#home{background-repeat:repeat;}
 
 .vendor {
 	text-align:center;
+    margin-top:5%;
 	margin-left:auto;
 	margin-right:auto;
-	max-height:500px;
-	width:80%;
-  	padding:1em;
+    margin-bottom:3em;
+	max-height:440px;
+	width:75%;
 }
 
 iframe.vid {
@@ -159,20 +148,88 @@ iframe.vid {
 	max-height: 500px !important;
 }
 
+.span-one-half{display:inline;}
+
 #white-body{
-    color: #0B1740;
-    background-color: rgba(250,250,250,0.9);
-    width: 90%;
-    text-align: center;
-    border-radius: 20px;
+    width:42%;
+    color:#0B1740;
+    background-color:rgba(250,250,250,0.75);
+    float:left;
+    margin-left:7%;
 }
 
+#white-body-2{
+    width:42%;
+    color:#0B1740;
+    background-color:rgba(250,250,250,0.75);
+    float:right;
+    margin-right:7%;
+}
+
+.bodytext{
+    padding-top:1.6em;
+    padding-left:1.2em;
+    padding-right:1.2em;
+    text-align:justify;
+    font-size:1.15em;
+    font-family:Trebuchet MS, sans-serif;
+    letter-spacing:0.01em;
+}
+
+.bodytext2{
+    padding:1em;
+    text-align:justify;
+    font-size:1.1em;
+    font-family:Trebuchet MS, sans-serif;
+    letter-spacing:0.03em;
+}
+
+.bodytexthead{
+    font-size:2.2em;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+}
+
+.bodytexthead2{
+    font-size:1.2em;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+}
+/********************** RUSH BOXES ************************/
+.row{margin-left:2%;}
+[class*="span"]{
+    display:inline;
+} 
+.clearfix:before, .clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+@media only screen and (min-width:800px){
+    .row{margin-top:10em;}
+}
+@media only screen and (max-width:800px){
+    .span-one-half{display:block;}
+    #white-body{
+        margin-left:5%;
+        margin-right:5%;
+        width:90%;
+    }
+    #white-body-2{
+        margin:5%;
+        width:90%;
+    }
+    .row{margin-top:3em;}
+}
+/******************** /RUSH BOXES ************************/
+
 #blue-body{
-    color: #ffffff;
-    background-color: rgba(11,23,64,0.8);
-    width: 88%;
-    text-align: justify;
-    border-radius: .5em;
+    color:#ffffff;
+    background-color:rgba(11,23,64,0.7);
+    width:75%;
+    text-align:justify;
+    margin:0 auto;
+    margin-bottom:5em;
+    padding-left:1em;
+    padding-right:1em;
 }
 
 
@@ -216,5 +273,5 @@ footer{
     width:100%;
     text-align:center;
     color:#ffffff;
-    padding:0.3em;
+    padding:0.1em;
 }

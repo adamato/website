@@ -1,8 +1,14 @@
-#buzzword-carousel{width:9em; font-size:3em;}
+#buzzword-carousel{
+	width:9em;
+	font-size:2em;
+	padding-top:0.4em;
+}
 #modal-button{
 	border-style:none;
 	background-color:#0B1740;
 	color:#ffffff;
+	text-align:center;
+	letter-spacing:0.05em;
 }
 
 #interest-form{
