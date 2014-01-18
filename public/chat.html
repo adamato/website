@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="chat.css">       
+    </head>
+    <body>
+        <div id="posts"></div>
+        <h2>Text Input:</h2>
+        <input type="text" id="user" placeholder="User..."/>
+        <input type="text" id="text" placeholder="Type here..."/>
+        <input type="button" value="Send" id="send"/>  
+    </body>
+</html>
+
+<script src="/lib/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+/////// Socket.io event handling
+    var socket = io.connect('http://0.0.0.0:9900');
+    
+    socket.on('chatter', function (data) {
+        $('#posts').append(data);
+    });
+
+////// JQuery button clicks
+
+    $('#send').on('click', function () {
+        var data = {
+            user: $('#user').val(),
+            text: $('#text').val()
+        };
+        socket.emit('chat',data);
+        $('#posts').append('<div class="post2"><h3>'+$('#user').val()+'</h3><p>'+new Date()+'</p><p>'+$('#text').val()+'</p></div>');
+    });
+
+</script>
