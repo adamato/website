@@ -1,8 +1,8 @@
 var express = require('express'),
-	mongo = require('mongoose'),
+	// mongo = require('mongoose'),
 	formidable = require('formidable');
 var app = express();
-mongo.connect('mongodb://localhost/interestInfo');
+// mongo.connect('mongodb://localhost/interestInfo');
 
 app.use(express.logger('dev'));
 app.use(express.json());
@@ -21,17 +21,17 @@ app.get('/',function(req,res){
 
 /*/	Database init for interest form
 /*/
-var rushSchema = new mongo.Schema({
+/*var rushSchema = new mongo.Schema({
 	Name: String,
 	Email: String,
 	Year: String
 });
 
-var Rush = mongo.model('Rush', rushSchema);
+var Rush = mongo.model('Rush', rushSchema);*/
 /*/
 *	process form input and store in database
 /*/
-app.post('/interest',function(req,res){
+/*app.post('/interest',function(req,res){
 	console.log('interested');
 	console.log(req.body);
 	var rush = new Rush({
@@ -48,7 +48,7 @@ app.post('/interest',function(req,res){
 		res.send(true);
 		return;
 	});
-});
+});*/
 
 /*/
 *	tell our server to 'listen' on the given port
