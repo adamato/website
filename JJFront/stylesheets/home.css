@@ -67,7 +67,7 @@ body {
 
 }
 
-.click {
+.presser {
 	cursor: pointer; cursor: hand;
 }
 
@@ -84,6 +84,15 @@ body {
   -webkit-animation-name: greenPulse;
   -webkit-animation-duration: 7s;
   -webkit-animation-iteration-count: infinite;
+}
+
+
+
+.presser > p {
+	margin: 0;
+	padding-top: 1.7em;
+	text-align: center;
+	text-decoration: bold;
 }
 
 
