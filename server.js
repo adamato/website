@@ -4,7 +4,7 @@ var app = express(),
 	server = require('http').createServer(app), 
 	io = require('socket.io').listen(server);
 
-app.listen(9900,function(){
+server.listen(9900,function(){
 	console.log('KTP web server listening on port 9900!');
 });
 
