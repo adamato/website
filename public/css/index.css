@@ -1,3 +1,11 @@
+#kappathetapifooter{
+    font-family:'Petit Formal Script', cursive;
+    font-size:2.3em;
+    letter-spacing:0.1em;
+    padding-left:2em;
+    padding-top:0.4em;
+}
+
 .ktp-fade {
 	color: #18FF18;  
 	-webkit-animation: ktp-fade 20s infinite linear; 
@@ -79,7 +87,7 @@ body{
     padding-bottom: 9px;
     color: white;
     height: 100%;
-    width: 16.666666666666667%;
+    width: 25%;
     /*border-right: 0.1em solid #EEEEEE;*/
 }   
 
