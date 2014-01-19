@@ -30,7 +30,6 @@
 body{
 	font-family: Raleway, sans-serif;
 	position: absolute;
-
 }
  
 ::-webkit-scrollbar{width: 12px;}
@@ -61,25 +60,25 @@ body{
     color:#FFFFFF;
 }
 
-#nav-bar {
+#nav-bar{
     position: fixed;
     z-index: 10;
     height: 48px;
     width: 100%;
     text-align: center;
-    background: #0B1740;
+    background: #000000;
     font-size: 20px; 
-    border-bottom: 2px solid #616D7E;
+    box-shadow: 0 0 1.5em rgba(0,0,0,0.6);
 }
 
-.nav-link {
+.nav-link{
     float: left;
     padding-top: 9px;
     padding-bottom: 9px;
     color: white;
     height: 100%;
     width: 16.666666666666667%;
-    border-right: 3px solid #616D7E;
+    border-right: 0.1em solid #EEEEEE;
 }   
 
 .nav-link:hover{
@@ -148,10 +147,12 @@ body{
 
 .vendor {
 	text-align:center;
-    margin-top:5em;
+    margin-top:6em;
 	margin-left:auto;
 	margin-right:auto;
+    margin-bottom:0em;
 	width:60em;
+    box-shadow:0 0 0.7em rgba(0,0,0,0.6);
 }
 
 iframe.vid {
@@ -163,20 +164,22 @@ iframe.vid {
 
 #white-body{
     width:42%;
-    color:#0B1740;
+    color:rgba(0,0,0,0.7);
     background-color:rgba(250,250,250,0.75);
     float:left;
     margin-left:7%;
     height:27em;
+    box-shadow:0 0 0.5em #458FFF;
 }
 
 #white-body-2{
     width:42%;
-    color:#0B1740;
+    color:rgba(0,0,0,0.7);
     background-color:rgba(250,250,250,0.75);
     float:right;
     margin-right:7%;
     height:27em;
+    box-shadow:0 0 0.5em #19FF19;
 }
 
 .bodytext{
@@ -237,7 +240,7 @@ iframe.vid {
 #blue-body{
     /*color:rgba(250,250,250,0.8);
     background-color:rgba(11,23,64,0.8);*/
-    color:rgb(11,23,64);
+    color:rgba(0,0,0,0.7);
     width:75%;
     text-align:justify;
     margin:0 auto;
@@ -282,11 +285,12 @@ iframe.vid {
 footer{
     bottom:0%;
     position:fixed;
-    background-color:#0B1740;
+    background-color:#000000;
     z-index:10;
     width:100%;
     text-align:center;
     color:#ffffff;
     padding:0.1em;
-    border-top: 2px solid #616D7E;
+    border-top: 2px solid rgba(0,0,0,0.8);
+    box-shadow: 0 0 1.5em rgba(0,0,0,0.6);
 }
