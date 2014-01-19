@@ -1,11 +1,15 @@
 #buzzword-carousel{
-	width:9em;
-	font-size:2em;
-	padding-top:0.4em;
+	width:17em;
+	font-size:1.7em;
+	padding-top:0.7em;
+	padding-left:1.7em;
+	text-transform:uppercase;
+	letter-spacing:0.07em;
 }
 #modal-button{
-	border-style:none;
-	background-color:#0B1740;
+	border:none;
+	border-radius:none;
+	background-color:#458FFF;
 	color:#ffffff;
 	text-align:center;
 	letter-spacing:0.05em;
@@ -13,3 +17,13 @@
 #interest-form{text-align:justify;}
 #myModal{top:25%; overflow:hidden;}
 #interest-form{text-align:justify;}
+.submitbutton{
+	padding:0.5em;
+	color:#FFFFFF;
+	border:none;
+	background-color:#458FFF;
+	font-size:1.2em;
+	letter-spacing:0.11em;
+	text-transform:uppercase;
+	border-radius:0.3em;
+}

@@ -55,9 +55,11 @@ body{
 
 .comingsoon{
     text-align:center;
-    padding-top:5em;
+    margin-top:15%;
     font-size:5em;
-    color:#FFFFFF;
+    color:#000000;
+    background-color:yellow;
+    box-shadow:0 0 0.6em #000000;
 }
 
 #nav-bar{
@@ -78,16 +80,12 @@ body{
     color: white;
     height: 100%;
     width: 16.666666666666667%;
-    border-right: 0.1em solid #EEEEEE;
+    /*border-right: 0.1em solid #EEEEEE;*/
 }   
 
-.nav-link:hover{
-    color:#19FF19;
-    cursor:pointer;
-    cursor:hand;
-} 
+.nav-link:hover{border-bottom:0.2em solid #EEEEEE; cursor:hand;}
 
-.selected {color:#19FF19;}
+.selected{border-bottom:0.2em solid #EEEEEE;}
 
 .quote {
     float: left;
@@ -251,6 +249,14 @@ iframe.vid {
 
 
 /******************************* /HOME *****************************/
+
+.contactinfo{
+    font-size:1.7em;
+    color:rgba(0,0,0,0.5);
+    font-family:Raleway, sans-serif;
+    margin-top:20%;
+    text-align:center;
+}
 
 .social-slide {
     height: 48px;
