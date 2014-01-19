@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1#room= room
+	input#text.input(type='text',placeholder='Type here...')
+	button#send.input send
+	div#chatter
+		each msg in msgs
+			div.post
+				h3= msg.user
+				p= msg.time
+				p= msg.text

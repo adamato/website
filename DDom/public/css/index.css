@@ -1,0 +1,50 @@
+.forum {
+	position: absolute;
+	top: 48px;
+	bottom: 55px;
+	width: 20%;
+	overflow: auto;
+	border-right: 3px solid #616D7E;
+	text-align: center;
+}
+
+#committees {
+	left: 0%;
+}
+
+#projects {
+	left: 20%;
+}
+
+#topics {
+	left: 40%;
+}
+
+#posts {
+	position: absolute;
+	top: 10%;
+	height: 80%;
+	overflow: auto;
+	text-align: center;
+	left: 60%;
+	width: 40%;
+}
+
+.selectedCommittee {
+	background-color: #458FFF;
+}
+
+.selectedProject {
+	background-color: #19FF19;
+}
+
+.selectedTopic {
+	background-color: #458FFF;
+}
+
+#inputs {
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	border-top: 2px solid #616D7E;
+}

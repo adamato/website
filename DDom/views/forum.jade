@@ -1,0 +1,7 @@
+extends layout
+
+block content
+	each post in posts
+		h1= post.user
+		p= post.time
+		p= post.text
