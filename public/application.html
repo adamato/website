@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rush Application</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/application.css">    
+    </head>
+	<body>
+		<h1>APPLICATION</h1>
+		<h2>PERSONAL INFORMATION</h2>
+		<form action="/application" enctype="multipart/form-data" method="post">
+			Name: <input type="text" name="name" required/><br>
+			Uniqname: <input type="text" name="uniqname" required/><br>
+			Phone: <input type="text" name="phone" required/><br>
+			Address: <input type="text" name="address" required/><br>
+			Photo: <input type="file" name="picture" required/><br>
+			<h2>Academics</h2>
+			Concentration: <input type="text" name="concentration" required/><br>
+			Minor(s): <input type="text" name="minor" required/><br>
+			Expected graduation year: <input type="text" name="gradyear" required/><br>
+			Career Goal: <input type="text" name="career" required/><br>
+			<h2>Involvement</h2>
+			<p>List your other activities on campus (jobs, volunteering, clubs, athletic teams, etc):</p>
+			1. <input type="text" name="activities1" required/><br>
+			2. <input type="text" name="activities2" required/><br>
+			3. <input type="text" name="activities3" required/><br>
+			4. <input type="text" name="activities4" required/><br>
+			<h2>Short Answers</h2>
+			<p>Feel free to be creative</p>
+			1. What can you contribute to KTP? <input type="text" name="contribution" required/><br>
+			2. What are you hoping to get out of KTP? <input type="text" name="whatDoYouWantWithUs" required/><br>
+			3. Compose a "tweet" that describes yourself in 140 characters or less. <input type="text" name="tweet" required/><br>
+			Transcript: <input type="file" name="transcript" required/><br>
+			Resume (optional): <input type="file" name="resume"><br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
