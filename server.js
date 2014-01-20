@@ -31,8 +31,14 @@ app.post('/application', function (req,res) {
 	var form = new formidable.IncomingForm();
 	form.parse(req, function(err, fields, files) {
 		console.log( 'submission from ' + fields.name );
-		fs.writeFile('./data/'+fields.uniqname+'.application',JSON.stringify(fields), function (err) {
-			if(err) console.log(err);
+		fs.rename(files.picture.path,'./data/'+fields.uniqname+'-picture',function(err){
+			fs.rename(files.transcript.path,'./data/'+fields.uniqname+'-transcript',function(err){
+				fs.writeFile('./data/'+fields.uniqname+'-application',JSON.stringify(fields), function (err) {
+					fs.rename(files.resume.path,'./data/'+fields.uniqname+'-resume',function(err){
+						if(err) console.log(err);
+					});
+				});
+			});
 		});
 	});
 	res.send('<html><body><center><br><h1>Thank you!</h1><h3>See you at Game Night.</h3></center></body></html>');
