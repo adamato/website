@@ -1,0 +1,97 @@
+body{
+	font-size:1em;
+	text-align:center;
+	margin:3% 10%;
+	font-family:Trebuchet, sans-serif;
+	color:#000000;
+	background-color:#FFFFFF;
+}
+
+p{
+	font-size:1em;
+	text-align:justify;
+	padding-left:1.5em;
+	padding-right:1.5em;
+}
+
+.duties{
+	padding-left:3em;
+	padding-right:3em;
+}
+
+h1{
+	font-size:2.25em;
+	letter-spacing:0.5em;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	background-color:#000000;
+	display:inline;
+	padding-left:0.5em;
+}
+
+h2{
+	font-size:3.25em;
+	letter-spacing:0.3em;
+	text-transform:uppercase;
+	padding-left:0.3em;
+}
+
+h3{
+	font-size:1.5em;
+	letter-spacing:0.1em;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	background-color:#000000;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	text-align:left;
+}
+
+h4{
+	font-size:1.25em;
+	text-align:left;
+}
+
+footer{
+	padding:0.5em;
+	font-size:1em;
+	position:fixed;
+	bottom:0%;
+	background-color:#FFFFFF;
+	width:80%;
+}
+
+footer > a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#000000;
+}
+
+.colorblue{
+	color:#458FFF;
+	font-weight:bold;
+}
+
+.colorgreen{
+	color:#19FF19;
+	font-weight:bold;
+}
+
+.greekletters{
+	font-family:Helvetica, sans-serif;
+	letter-spacing:0.1em;
+	font-weight:bold;
+}
+
+::-webkit-scrollbar{
+  width:0.7em;
+  height:0.7em;
+}
+
+::-webkit-scrollbar-track{
+  background:#FFFFFF;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#000000;
+}
