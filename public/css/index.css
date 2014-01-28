@@ -71,24 +71,24 @@ body{
 }
 
 #nav-bar{
-    position: fixed;
-    z-index: 10;
-    height: 48px;
-    width: 100%;
-    text-align: center;
-    background: #000000;
-    font-size: 20px; 
-    box-shadow: 0 0 1.5em rgba(0,0,0,0.6);
+    position:fixed;
+    z-index:10;
+    height:2.5em;
+    width:100%;
+    text-align:center;
+    background:#000000;
+    font-size:1.5em;
+    letter-spacing:0.1em;
+    box-shadow:0 0 1.5em rgba(0,0,0,0.6);
 }
 
 .nav-link{
-    float: left;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    color: white;
-    height: 100%;
-    width: 25%;
-    /*border-right: 0.1em solid #EEEEEE;*/
+    float:left;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
+    color:#ffffff;
+    height:100%;
+    width:25%;
 }   
 
 .nav-link:hover{border-bottom:0.2em solid #EEEEEE; cursor:hand;}
@@ -117,15 +117,12 @@ body{
 
 /* 855 px add media*/
 @media all and (max-width: 855px) {
-	.quote{
-		display: none;nav-bar
-	}
-	div.nav-link {
-		width: 16.6666666667%;
-	}
-    h1 {
-        font-size: 10px;
-    }
+	.quote{display:none;}
+    h1{font-size:10px;}
+}
+
+@media only screen and (max-width:550px){
+    .nav-link{display:block; width:100%;}
 }
 /******************************* /NAV *******************************/
 
