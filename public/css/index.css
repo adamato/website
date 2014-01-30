@@ -7,7 +7,7 @@
 }
 
 .ktp-fade {
-	color: #18FF18;  
+	color: #18FF18;
 	-webkit-animation: ktp-fade 20s infinite linear; 
 	-moz-animation: ktp-fade 20s infinite linear; 
 }
@@ -123,6 +123,7 @@ body{
 
 @media only screen and (max-width:550px){
     .nav-link{display:block; width:100%;}
+    #nav-bar{height:5em;}
 }
 /******************************* /NAV *******************************/
 
@@ -144,6 +145,7 @@ body{
 
 @media only screen and (max-width:900px){
     #home-hdr-font{font-size:6em;}
+    .vendor{display:none;}
 }
 
 #home{background-repeat:repeat;}
@@ -158,10 +160,7 @@ body{
     box-shadow:0 0 0.7em rgba(0,0,0,0.6);
 }
 
-iframe.vid {
-	/*fixed height...?*/
-	max-height: 500px !important;
-}
+iframe.vid {max-height: 500px !important;}
 
 .span-one-half{display:inline;}
 
@@ -183,6 +182,13 @@ iframe.vid {
     margin-right:7%;
     height:27em;
     box-shadow:0 0 0.5em #19FF19;
+}
+
+@media only screen and (max-width:1100px){
+    #white-body{height:32em;}
+    #white-body-2{height:32em;}
+    #white-body > .bodytext{font-size:1em;}
+    #white-body-2 > .bodytext{font-size:1em;}
 }
 
 .bodytext{
@@ -231,10 +237,12 @@ iframe.vid {
         margin-left:5%;
         margin-right:5%;
         width:90%;
+        height:22em;
     }
     #white-body-2{
         margin:5%;
         width:90%;
+        height:22em;
     }
     .row{margin-top:3em;}
 }
@@ -304,4 +312,7 @@ footer{
     padding:0.1em;
     border-top: 2px solid rgba(0,0,0,0.8);
     box-shadow: 0 0 1.5em rgba(0,0,0,0.6);
+}
+@media only screen and (max-width:800px){
+    footer{}
 }
