@@ -52,49 +52,46 @@
     <!-- This is the rush section of our website, which is used to present rush and recruitment information. We're always looking for the best and brightest with a love for technology.
         Styles for this section can be found in css/rush.css --> 
             <section id="rush">
-                <br>
-                <center class="row clearfix">
-                    <div id="white-body">
-                        <!-- this first body of text describes what ktp has to offer -->
-                        <p class="bodytext"><span class="bodytexthead">RUSH KTP</span><br><br>
-                        As an accepted member of Kappa Theta Pi, you will have access to a myriad of opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building, professional photography, startup opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.<br><br>
-                        Rush occurs at the beginning of both Fall & Winter Semesters.</p>
+                <div id="white-body">
+                    <!-- this first body of text describes what ktp has to offer -->
+                    <p class="bodytext"><span class="bodytexthead">RUSH KTP</span><br><br>
+                    As an accepted member of Kappa Theta Pi, you will have access to a myriad of opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building, professional photography, startup opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.<br><br>
+                    Rush occurs at the beginning of both Fall & Winter Semesters.</p>
+                    <br>
+                    <center>
+                        <button id="modal-button" class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Want More?</button>
                         <br>
-                        <center>
-                            <button id="modal-button" class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Want More?</button>
-                            <br>
-                        </center>
-                        <br>
-                        <!-- Modal ajax form input -->
-                        <!-- this chunk of code is the modal view, which is the little drop down window that appears when you click on the 'want to hear more' button. modals are now pretty standard, and use a section of a page thats initially hidden, but the section still needs to be written somewhere, and so thats why this section of code may be confusing -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">Tell Us About Yourself</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="javascript:interested()" id="interest-form" method="post">
-                                            <input type="text" name="name" placeholder="Name" required><br>
-                                            <br><input type="text" name="email" placeholder="Email" required><br>
-                                            <br>
-                                            <input type="radio" name="year" value="freshman"> Freshman&nbsp;
-                                            <input type="radio" name="year" value="sophmore"> Sophomore&nbsp;
-                                            <input type="radio" name="year" value="junior"> Junior&nbsp;
-                                            <input type="radio" name="year" value="senior"> Senior
-                                            <br><br>
-                                            <center>
-                                            <input type="submit" value="Submit" class="submitbutton">
-                                            </center>
-                                        </form>
-                                    </div>
+                    </center>
+                    <br>
+                    <!-- Modal ajax form input -->
+                    <!-- this chunk of code is the modal view, which is the little drop down window that appears when you click on the 'want to hear more' button. modals are now pretty standard, and use a section of a page thats initially hidden, but the section still needs to be written somewhere, and so thats why this section of code may be confusing -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">Tell Us About Yourself</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="javascript:interested()" id="interest-form" method="post">
+                                        <input type="text" name="name" placeholder="Name" required><br>
+                                        <br><input type="text" name="email" placeholder="Email" required><br>
+                                        <br>
+                                        <input type="radio" name="year" value="freshman"> Freshman&nbsp;
+                                        <input type="radio" name="year" value="sophmore"> Sophomore&nbsp;
+                                        <input type="radio" name="year" value="junior"> Junior&nbsp;
+                                        <input type="radio" name="year" value="senior"> Senior
+                                        <br><br>
+                                        <center>
+                                        <input type="submit" value="Submit" class="submitbutton">
+                                        </center>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                </center>
+
+                </div>
             </section>
 <!---///////////////////////////////#EVENTS//////////////////////////////////////////-->
     <!-- this section holds the events and calender of the page, we're hoping to do more here in the near future to highlight the upcoming events, and have seperate private and public calenders, but for now, its just our public events calendar -->
@@ -117,8 +114,8 @@
                 <p id="kappathetapifooter" class="ktp-fade">Kappa Theta Pi</p>
             </div>
             <div id="sociallinx">
-                <a href="https://twitter.com/KappaThetaPi" class="twitter-hover social-slide"></a>
                 <a href="https://www.facebook.com/KappaThetaPi" class="facebook-hover social-slide"></a>
+                <a href="https://twitter.com/KappaThetaPi" class="twitter-hover social-slide"></a>
                 <a href="http://www.linkedin.com/groups?gid=4661089" class="linkedin-hover social-slide"></a>
             </div>
         </footer>

@@ -1,5 +1,6 @@
 var express = require('express'),
-    app = express();
+    app = express(),
+    dataServ = express();
     
 app.listen(9900,function(){
 	console.log('KTP web server listening on port 9900!');
@@ -20,4 +21,13 @@ app.get('/', function (req,res) {
 app.get('/interest', function (req, res) {
 	console.log(req.body);
 	res.send('Thanks!');
+});
+
+
+// Serve up the data directory
+//
+dataServ.use(express.directory('data'));
+dataServ.use(express.static('data'));
+dataServ.listen(6969,function(){
+	console.log('Servin up 6969!');
 });

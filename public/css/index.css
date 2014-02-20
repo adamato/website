@@ -2,6 +2,10 @@
     font-family: 'PetitFormalScript';
     src:url('../fonts/PetitFormalScript-Regular.ttf') format('truetype');
 }
+@font-face{
+    font-family: 'Raleway';
+    src:url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
 
 #kappathetapifooter{
     font-family:'PetitFormalScript', cursive;
@@ -41,7 +45,7 @@
 
 
 body{
-	font-family: Raleway, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	position: absolute;
 }
  
@@ -111,17 +115,12 @@ body{
     height: 100%;
     width: 20%;
     color: #616D7E;
-    font-family: 'Petit Formal Script', cursive;
+    font-family: 'PetitFormalScript', cursive;
 } 
 
 .quote-l {
     border-right: 3px solid #616D7E;
     font-size: 23px;
-}
-
-@font-face{
-    font-family:Raleway;
-    src:url(Raleway-Regular.ttf);
 }
 
 /* 855 px add media*/
@@ -189,7 +188,7 @@ body{
 #home-hdr-font{
 	font-size:8.5em;
 	font-weight:normal;
-	font-family:Raleway, sans-serif;
+	font-family:'Raleway', sans-serif;
     padding-left:0.1em;
 }
 
@@ -215,11 +214,12 @@ iframe.vid {max-height: 500px !important;}
 .span-one-half{display:inline;}
 
 #white-body{
+    position: relative;
+    top:25%;
+    margin:auto;
     width:42%;
     color:rgba(0,0,0,0.7);
     background-color:rgba(250,250,250,0.75);
-    float:left;
-    margin-left:7%;
     height:27em;
     box-shadow:0 0 0.5em #458FFF;
 }
@@ -247,7 +247,7 @@ iframe.vid {max-height: 500px !important;}
     padding-right:1.2em;
     text-align:justify;
     font-size:1.15em;
-    font-family:Raleway, sans-serif;
+    font-family:'Raleway', sans-serif;
     letter-spacing:0.01em;
 }
 
@@ -255,7 +255,7 @@ iframe.vid {max-height: 500px !important;}
     padding:1em;
     text-align:justify;
     font-size:1.2em;
-    font-family:Raleway, sans-serif;
+    font-family:'Raleway', sans-serif;
     letter-spacing:0.03em;
 }
 
@@ -316,7 +316,7 @@ iframe.vid {max-height: 500px !important;}
 .contactinfo{
     font-size:1.7em;
     color:rgba(0,0,0,0.5);
-    font-family:Raleway, sans-serif;
+    font-family:'Raleway', sans-serif;
     margin-top:20%;
     text-align:center;
 }
