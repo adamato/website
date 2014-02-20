@@ -241,6 +241,12 @@ iframe.vid {max-height: 500px !important;}
     #white-body-2 > .bodytext{font-size:1em;}
 }
 
+@media only screen and (max-width: 430px) {
+    #white-body {
+        height: 27em!important;
+    }    
+}
+
 .bodytext{
     padding-top:1.6em;
     padding-left:1.2em;
@@ -257,6 +263,14 @@ iframe.vid {max-height: 500px !important;}
     font-size:1.2em;
     font-family:'Raleway', sans-serif;
     letter-spacing:0.03em;
+}
+
+@media only screen and (max-width: 420px){
+    .bodytext2{
+        font-size: 1.2em;
+        padding: .2em;
+        letter-spacing: normal;
+    }
 }
 
 .bodytexthead{
@@ -308,6 +322,12 @@ iframe.vid {max-height: 500px !important;}
     margin-bottom:5em;
     padding-left:1em;
     padding-right:1em;
+}
+
+@media all and (max-width: 900px){
+    #blue-body{
+        margin-top: 5em;
+    }
 }
 
 
