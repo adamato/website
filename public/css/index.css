@@ -96,6 +96,10 @@ body{
     width:25%;
 }   
 
+#pull {
+    display: none;  
+}
+
 .nav-link:hover{border-bottom:0.2em solid #EEEEEE; cursor:hand;}
 
 .selected{border-bottom:0.2em solid #EEEEEE;}
@@ -127,8 +131,49 @@ body{
 }
 
 @media only screen and (max-width:550px){
-    .nav-link{display:block; width:100%;}
-    #nav-bar{height:5em;}
+    .nav-link{
+        display:block; 
+        width:100%;
+        height: auto;
+        background-color: black;
+    }
+    #nav-bar{
+        display: none;
+        height:5em;
+        margin-top: 50px;
+    }
+    a#pull {
+        display: block;
+        position:fixed;
+        z-index:10;
+        height:2.5em;
+        width:100%;
+        background-color: #458fff;
+        text-align:center;
+        color: white;
+        text-decoration: none;
+        font-size:1.5em;
+        letter-spacing:0.1em;
+        box-shadow:0 0 1.5em rgba(0,0,0,0.6);  
+    }
+    a#pull:after {
+        content:"";
+        background: url('http://localhost/ClassSite/img/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: fixed;
+        right: .3em;
+        top: 0.6em;
+    }
+    a#pull:hover {
+        background-color: #104BA9;
+    }
+    p.menuButton {
+        position: fixed;
+        margin-left: .5em;
+        margin-top: .4em;
+    }    
 }
 /******************************* /NAV *******************************/
 

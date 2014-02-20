@@ -21,3 +21,26 @@ _gaq.push(['_trackPageview']);
 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+
+
+
+
+//For the menu
+
+$(function() {
+	var pull 		= $('#pull');
+		menu 		= $('nav');
+		menuHeight	= menu.height();
+
+	$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 320 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+});
