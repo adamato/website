@@ -9,9 +9,7 @@
     "url": "https://github.com/ktp-dev/website.git"
   },
   "dependencies": {
-    "express": "latest",
-    "socket.io": "latest",
-    "formidable": "latest"
+    "express": "latest"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -19,7 +17,6 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-concurrent": "~0.4.2",
     "grunt-nodemon": "~0.1.2",
-    "express": "~3.4.7",
-    "mongoose": "~3.8.3"
+    "express": "~3.4.7"
   }
 }

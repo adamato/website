@@ -23,13 +23,11 @@ _gaq.push(['_trackPageview']);
 })();
 
 
-
-
 //For the menu
 
 $(function() {
-	var pull 		= $('#pull');
-		menu 		= $('nav');
+	var pull		= $('#pull');
+		menu        = $('nav');
 		menuHeight	= menu.height();
 
 	$(pull).on('click', function(e) {

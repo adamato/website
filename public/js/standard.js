@@ -28,7 +28,6 @@ function makeNewPosition(){
     var nw = Math.floor(Math.random() * w);
     
     return [nh,nw];    
-    
 }
 
 function animateDiv(){
@@ -38,5 +37,5 @@ function animateDiv(){
       animateDiv();        
     });
     
-};
+}
 
