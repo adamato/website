@@ -157,7 +157,7 @@ body{
     }
     a#pull:after {
         content:"";
-        background: url('http://localhost/ClassSite/img/nav-icon.png') no-repeat;
+        background: url('../img/nav-icon.png') no-repeat;
         width: 30px;
         height: 30px;
         display: inline-block;
