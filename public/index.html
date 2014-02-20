@@ -14,8 +14,7 @@
         <link rel="stylesheet" type="text/css" href="css/rush.css">
         <link rel="stylesheet" type="text/css" href="css/events.css">
         <link rel="stylesheet" type="text/css" href="lib/css/webkit.css">
-        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>          
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">     
     </head>
     <body>
 <!--/////////////////NAV-BAR//////////////////////-->
@@ -26,8 +25,6 @@
             <div class="nav-link selected">ABOUT</div>
             <div class="nav-link">RUSH</div>
             <div class="nav-link">EVENTS</div>
-            <!--<div class="nav-link">MEMBERS</div>
-            <div class="nav-link">BLOG</div>-->
             <div class="nav-link">CONTACT</div>
         </nav>     
         <!-- This is the little line of code gives the nice horizontally sliding effect, which is just a jquery library.
@@ -55,62 +52,48 @@
         Styles for this section can be found in css/rush.css --> 
             <section id="rush">
                 <br>
-                <div class="row clearfix">
-                <div class="span-one-half" id="white-body">
-                    <!-- this first body of text describes what ktp has to offer -->
-                    <p class="bodytext"><span class="bodytexthead">RUSH KTP</span><br><br>
-                    As an accepted member of Kappa Theta Pi, you will have access to a myriad of opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building, professional photography, startup opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.<br><br>
-                    Rush occurs at the beginning of both Fall & Winter Semesters.</p>
-                    <br>
-                    <center>
-                    <button id="modal-button" class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Want More?</button>
-                    <br>
-                    </center>
-                    <br>
-                    <!-- Modal ajax form input -->
-                    <!-- this chunk of code is the modal view, which is the little drop down window that appears when you click on the 'want to hear more' button. modals are now pretty standard, and use a section of a page thats initially hidden, but the section still needs to be written somewhere, and so thats why this section of code may be confusing -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="myModalLabel">Tell Us About Yourself</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="javascript:interested()" id="interest-form" method="post">
-                                        <input type="text" name="name" placeholder="Name" required><br>
-                                        <br><input type="text" name="email" placeholder="Email" required><br>
-                                        <br>
-                                        <input type="radio" name="year" value="freshman"> Freshman&nbsp;
-                                        <input type="radio" name="year" value="sophmore"> Sophomore&nbsp;
-                                        <input type="radio" name="year" value="junior"> Junior&nbsp;
-                                        <input type="radio" name="year" value="senior"> Senior
-                                        <br><br>
-                                        <center>
-                                        <input type="submit" value="Submit" class="submitbutton">
-                                        </center>
-                                    </form>
+                <center class="row clearfix">
+                    <div id="white-body">
+                        <!-- this first body of text describes what ktp has to offer -->
+                        <p class="bodytext"><span class="bodytexthead">RUSH KTP</span><br><br>
+                        As an accepted member of Kappa Theta Pi, you will have access to a myriad of opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building, professional photography, startup opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.<br><br>
+                        Rush occurs at the beginning of both Fall & Winter Semesters.</p>
+                        <br>
+                        <center>
+                            <button id="modal-button" class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Want More?</button>
+                            <br>
+                        </center>
+                        <br>
+                        <!-- Modal ajax form input -->
+                        <!-- this chunk of code is the modal view, which is the little drop down window that appears when you click on the 'want to hear more' button. modals are now pretty standard, and use a section of a page thats initially hidden, but the section still needs to be written somewhere, and so thats why this section of code may be confusing -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">Tell Us About Yourself</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="javascript:interested()" id="interest-form" method="post">
+                                            <input type="text" name="name" placeholder="Name" required><br>
+                                            <br><input type="text" name="email" placeholder="Email" required><br>
+                                            <br>
+                                            <input type="radio" name="year" value="freshman"> Freshman&nbsp;
+                                            <input type="radio" name="year" value="sophmore"> Sophomore&nbsp;
+                                            <input type="radio" name="year" value="junior"> Junior&nbsp;
+                                            <input type="radio" name="year" value="senior"> Senior
+                                            <br><br>
+                                            <center>
+                                            <input type="submit" value="Submit" class="submitbutton">
+                                            </center>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
-                <!-- this section holds information on upcoming rush, and a schedule of the events -->
-                <div class="span-one-half" id="white-body-2">
-                    <p class="bodytext"><span class="bodytexthead">Upcoming Events</span><br><br>
-                    <span class="bodytexthead2">Mass Meetings</span><br>
-                        Thursday, Jan 16, 6:00 - 7:00 PM. 3330 MH (Informatics)<br>
-                        Sunday, Jan 19, 6:00 - 7:00 PM. 3460 MH (Business)<br>
-                        Monday, Jan 20, 6:00 - 7:00 PM. 3330 MH (Computer Science)<br>
-                        Thursday, Jan 23, 6:00 - 7:00 PM. 3330 MH (General)<br><br>
-                    <span class="bodytexthead2">Rush Events</span><br>
-                        Wednesday, Jan 22, 7:00 - 9:00 PM. 2435 NQ (Meet & Greet)<br>
-                        Tuesday, Jan 28, 7:00 - 9:00 PM. 2435 NQ (Game Night)<br>
-                        Saturday, Feb 1, 1:00 - 3:30 PM. 2435 NQ (All Hands On Tech)
-                    </p><br>
-                </div>
-                </div>
+                    </div>
+                </center>
             </section>
 <!---///////////////////////////////#EVENTS//////////////////////////////////////////-->
     <!-- this section holds the events and calender of the page, we're hoping to do more here in the near future to highlight the upcoming events, and have seperate private and public calenders, but for now, its just our public events calendar -->
@@ -119,14 +102,6 @@
                     <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=umich.edu_ge12tdb0ffc8caqneev860m55k%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style=" border-width:0 " width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
                 </div>
             </section>
-<!--- /////////////////////////////#MEMBERS///////////////////////////////////-->
-            <!--<section id="members">
-                <p class="comingsoon">MEMBERS PAGE COMING SOON</p>
-            </section>-->
-<!--- /////////////////////////////#BLOG//////////////////////////////////////-->
-            <!--<section id="blog">
-                <p class="comingsoon">BLOG COMING SOON</p>
-            </section>-->
 <!--- /////////////////////////////#CONTACT///////////////////////////////////-->
     <!-- this is the contact section of the page, which we can do a bit more with, if we want, but it doesnt hurt to keep it classy -->
             <section id="contact">
@@ -142,7 +117,7 @@
             </div>
             <div id="sociallinx">
                 <a href="https://twitter.com/KappaThetaPi" class="twitter-hover social-slide"></a>
-                <a href="https://www.facebook.com/groups/345015858877204/" class="facebook-hover social-slide"></a>
+                <a href="https://www.facebook.com/KappaThetaPi" class="facebook-hover social-slide"></a>
                 <a href="http://www.linkedin.com/groups?gid=4661089" class="linkedin-hover social-slide"></a>
             </div>
         </footer>

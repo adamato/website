@@ -1,3 +1,10 @@
+2/19
+Files:
+	renamed server.js to app.js, for consistency with node projects
+	removed DDom and GGreg files from top level directory
+	removed unused files from /public, to clean up file structure and reduce to just what we're using. Check the git if you're looking for past files like the application
+	downloaded font and added to css
+
 12/31
 File structure:
 	moved server files to top level directory, and changed 'vendor' files to 'lib' files, as is consistant with node.js projects. 
