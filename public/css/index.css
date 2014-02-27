@@ -215,7 +215,7 @@ iframe.vid {max-height: 500px !important;}
 
 #white-body{
     position: relative;
-    top:25%;
+    top:15%;
     margin:auto;
     width:42%;
     color:rgba(0,0,0,0.7);
@@ -241,6 +241,12 @@ iframe.vid {max-height: 500px !important;}
     #white-body-2 > .bodytext{font-size:1em;}
 }
 
+@media only screen and (max-width: 430px) {
+    #white-body {
+        height: 27em!important;
+    }    
+}
+
 .bodytext{
     padding-top:1.6em;
     padding-left:1.2em;
@@ -261,7 +267,7 @@ iframe.vid {max-height: 500px !important;}
 
 @media only screen and (max-width: 420px){
     .bodytext2{
-        font-size: 1em;
+        font-size: 1em; 
     }
 }
 
