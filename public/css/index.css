@@ -252,11 +252,17 @@ iframe.vid {max-height: 500px !important;}
 }
 
 .bodytext2{
-    padding:1em;
+    padding: 1em;
     text-align:justify;
     font-size:1.2em;
     font-family:'Raleway', sans-serif;
     letter-spacing:0.03em;
+}
+
+@media only screen and (max-width: 420px){
+    .bodytext2{
+        font-size: 1em;
+    }
 }
 
 .bodytexthead{
@@ -308,6 +314,12 @@ iframe.vid {max-height: 500px !important;}
     margin-bottom:5em;
     padding-left:1em;
     padding-right:1em;
+}
+
+@media all and (max-width: 900px){
+    #blue-body{
+        margin-top: 5em;
+    }
 }
 
 
