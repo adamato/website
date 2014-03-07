@@ -83,6 +83,14 @@ footer > a{
 	font-weight:bold;
 }
 
+.effective{
+	font-style:italic;
+	font-weight:bold;
+	text-align:right;
+	font-size:1.2em;
+	padding:1em;
+}
+
 ::-webkit-scrollbar{
   width:0.7em;
   height:0.7em;
