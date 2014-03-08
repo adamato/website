@@ -1,18 +1,15 @@
-
+//Video Stuff
 var ascensor = $('#ascensor').ascensor({direction:"x",ascensorFloorName:['','RUSH','EVENTS','CONTACT'],loop:false,time:400,childType:'section'});
-
-$('#nav-bar div').click(function(event, index) {
+$('#nav-bar div').click(function(event, index){
 	ascensor.trigger('scrollToStage', $(this).index());
 });
-
-$(".vendor").fitVids();
-
 ascensor.on('scrollStart', function(event, floor){
 	$('#nav-bar div').removeClass('selected');
 	$('#nav-bar div:eq('+floor.to+')').addClass('selected nav-active');
 });
+$(".vendor").fitVids();
 
-// Google analytics
+//Google Analytics
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-46859810-1']);
 _gaq.push(['_trackPageview']);
@@ -23,16 +20,25 @@ _gaq.push(['_trackPageview']);
 })();
 
 
-//For the menu
+//Navigation Menu, for Mobile
 
-$(function() {
+$(function(){
 	var pull		= $('#pull');
 		menu        = $('nav');
 		menuHeight	= menu.height();
+		isPulled	= 0;
 
-	$(pull).on('click', function(e) {
+	$(pull).on('click', function(e){
 		e.preventDefault();
 		menu.slideToggle();
+		isPulled = 1;
+	});
+
+	$('.nav-link').on('click', function(e){
+		if(isPulled == 1){
+			menu.slideToggle();
+			isPulled = 0;
+		}
 	});
 
 	$(window).resize(function(){
