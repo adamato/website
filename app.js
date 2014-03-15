@@ -35,8 +35,9 @@ dataServ.listen(6969,function(){
 
 // pull from repo upon release
 //
+var exec = require('child_process').exec;
 app.post('/api/gitrelease', function (req, res) {
-	require('child_process').exec('git pull', function() {
+	exec('git pull', function() {
 		console.log('pulled update from github');
 	});
 });
