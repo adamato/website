@@ -31,3 +31,12 @@ dataServ.use(express.static('data'));
 dataServ.listen(6969,function(){
 	console.log('Servin up 6969!');
 });
+
+
+// pull from repo upon release
+//
+app.post('/api/gitrelease', function (req, res) {
+	require('child_process').exec('git pull', function() {
+		console.log('pulled update from github');
+	});
+});
