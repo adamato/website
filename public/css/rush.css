@@ -15,7 +15,10 @@
 	letter-spacing:0.05em;
 }
 #interest-form{text-align:justify;}
-#myModal{top:25%; overflow:hidden;}
+#myModal{
+	padding: 10%; 
+	overflow:hidden;
+}
 #interest-form{text-align:justify;}
 .submitbutton{
 	padding:0.5em;
