@@ -18,9 +18,11 @@ app.get('/', function (req,res) {
 	res.sendfile('public/index.html');
 });
 
-app.get('/interest', function (req, res) {
-	console.log(req.body);
-	res.send('Thanks!');
+app.post('/interest', function (req, res) {
+	var str = 'name: ' + req.body.name + ' email: ' + req.body.email + ' year: ' + req.body.year + '\n';
+	require('fs').appendFile('data/interest.txt',str, function(err){
+		res.send('Thanks!');
+	});
 });
 
 
