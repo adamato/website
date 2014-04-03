@@ -18,9 +18,11 @@ app.get('/', function (req,res) {
 	res.sendfile('public/index.html');
 });
 
-app.get('/interest', function (req, res) {
-	console.log(req.body);
-	res.send('Thanks!');
+app.post('/interest', function (req, res) {
+	var str = 'name: ' + req.body.name + ' email: ' + req.body.email + ' year: ' + req.body.year + '\n';
+	require('fs').appendFile('data/interest.txt',str, function(err){
+		res.send('Thanks!');
+	});
 });
 
 
@@ -30,4 +32,14 @@ dataServ.use(express.directory('data'));
 dataServ.use(express.static('data'));
 dataServ.listen(6969,function(){
 	console.log('Servin up 6969!');
+});
+
+
+// pull from repo upon release
+//
+var exec = require('child_process').exec;
+app.post('/api/gitrelease', function (req, res) {
+	exec('git pull', function() {
+		console.log('pulled update from github');
+	});
 });
