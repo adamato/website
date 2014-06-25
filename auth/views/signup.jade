@@ -1,0 +1,12 @@
+section#contact
+    h1 Signup 
+    if message.length > 0
+        div= message
+    form(action='/signup',method='post')
+        div
+            label Email
+            input(type='text',name='email',required)
+        div
+            label Password
+            input(type='password',name='password',required)
+        button(type='submit') Signup

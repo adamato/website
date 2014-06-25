@@ -1,7 +1,7 @@
 {
   "name": "ktpsite",
   "description": "Kappa Theta Pi official website",
-  "version": "0.0.1",
+  "version": "1.5",
   "private": true,
   "author": "ktp-dev/webdev",
   "repository": {
@@ -9,7 +9,18 @@
     "url": "https://github.com/ktp-dev/website.git"
   },
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "cookie-parser": "latest",
+    "body-parser": "latest",
+    "connect-flash": "latest",
+    "express-session": "latest",
+    "connect-mongo": "latest",
+    "serve-index": "latest",
+    "mongoose": "latest",
+    "bcrypt-nodejs": "latest",
+    "jade": "latest"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

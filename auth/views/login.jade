@@ -1,0 +1,9 @@
+section
+    if message.length > 0
+        div= message
+    form(action='/login',method='post')
+        div
+            input(type='text',name='email',required,placeholder='Username')
+        div
+            input(type='password',name='password',required,placeholder='Password')
+        button(type='submit') Login

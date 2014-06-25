@@ -1,77 +1,29 @@
-var express = require('express'),
-	path = require('path'),
-	mongoose = require('mongoose'),
-	passport = require('passport'),
-	LocalStrategy = require('passport-local').Strategy;
-//CHANGED SOME SHIT ABOVE 
+var express  = require('express');
+var app      = express();
+var passport = require('passport'),
+    session = require('express-session'),
+    store = require('connect-mongo')(session);
 
-var app = express();
-    
-app.listen(9900,function(){
-	console.log('KTP web server listening on port 9900!');
-});
+require('mongoose').connect('mongodb://localhost:27017/ktpweb');
 
-app.set('views','views');
-app.set('view engine', 'jade');
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(express.static('public'));
+require('./auth/passport.js')(passport); 
 
-//ADDED BELOW
-app.use(express.favicon());
-app.use(express.logger());
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(express.cookieParser('secret'));
-app.use(express.session());
+app.set('views',__dirname+'/auth/views');
+app.set('view engine','jade');
+
+app.use(require('cookie-parser')()); 
+app.use(require('body-parser').urlencoded({extended:true})); 
+app.use(session({ 
+    secret: 'justinLikesTenticles',
+    store: new store({
+        db: 'ktpweb'
+    }) 
+}));
 app.use(passport.initialize());
 app.use(passport.session());
-//END ADD
-
-// passport config (added)
-var Account = require('./models/account');
-passport.use(new LocalStrategy(Account.authenticate()));
-passport.serializeUser(Account.serializeUser());
-passport.deserializeUser(Account.deserializeUser());
-
-
-// mongoose (if we use?)
-mongoose.connect('mongodb://localhost/'); //change this to server info 
-
-// Database
-var mongo = require('mongoskin');
-var db = mongo.db("mongodb://localhost:27017/", { native_parser: true }); //again change here
-
-var routes = require('./routes/index');
-var users = require('./routes/users');
-
-var app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
-app.use(favicon());
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Make db accessible to router
-app.use(function(req, res, next) {
-    req.db = db;
-    next();
-});
-
-app.use('/', routes);
-app.use('/users', users);
-
-//ADDED ABOVE
-
-
+app.use(require('connect-flash')()); 
+ 
+require('./auth/routes.js')(app,passport);
 
 app.get('/', function (req,res) {
 	res.sendfile('public/index.html');
@@ -84,13 +36,16 @@ app.post('/interest', function (req, res) {
 	});
 });
 
+app.use(express.static(__dirname+'/public'));
 
-
+app.listen(3000,function(){
+	console.log('KTP web server listening on port 3000!');
+});
 
 // Serve up the data directory
 //
-dataServ.use(express.directory('data'));
-dataServ.use(express.static('data'));
+var dataServ = express();
+dataServ.use(require('serve-index')('data'));
 dataServ.listen(6969,function(){
 	console.log('Servin up 6969!');
 });
@@ -104,5 +59,3 @@ app.post('/api/gitrelease', function (req, res) {
 		console.log('pulled update from github');
 	});
 });
-
-module.exports = app; //not sure if needed 
