@@ -1,140 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- new comment here -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Kappa Theta Pi</title>
     <link rel="icon" type="image/ico" href="img/favicon.ico"/>
-    <!-- Loading the CSS stylesheets - --> 
-    <!-- Here we load all of our styles, and styles like
-    webkit and bootstrap, used to make     our site look pretty.
-    This lets us place the code to style each of the sections in a different place, so this file is specifically html.
-    
-    Each section has its own set of styles, to further encapsulate our code, so we can make changes to a specific section or page without worrying about possibly making changes elsewhere -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/rush.css">
-    <link rel="stylesheet" type="text/css" href="css/events.css">
-    <link rel="stylesheet" type="text/css" href="lib/css/webkit.css">
-    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">     
 </head>
 <body>
-    <!-- NAV-BAR -->
-    <!-- This is our navigation bar, a collection of divs representing each tab/link. We use divs so that we can have the full area of the tab respond to a mouseover. The styles for these classes can be found in css/index.css, which holds most of our general styles used across the site -->
     <nav id="nav-bar">
-        <div class="nav-link selected">ABOUT</div>
-        <div class="nav-link">RUSH</div>
-        <div class="nav-link">EVENTS</div>
-        <div class="nav-link">CONTACT</div>
+        <li class="nav-link selected">HOME</li>
+        <li class="nav-link">ABOUT</li>
+        <li class="nav-link">MEMBERS</li>
+        <li class="nav-link">RUSH</li>
+        <li class="nav-link">COMMITTEES</li>
+        <li class="nav-link">CONTACT</li>
     </nav>
-    <a href="#" id="pull"><p id="menuButton" class="ktp-fade">Kappa Theta Pi</p></a>     
-    <!-- This is little line of code gives the nice horizontally sliding effect, which is just a jquery library. The initialization and options for how this functions can be found in js/index.js -->
-    <div id="ascensor">
-
-
-        <!-- #HOME -->
-        <!-- Here lies the home section, the first thing seen by a user, and holds general information about our fraternity. The video was chosen to go here so we can have a nice introduction to the goals and ideas of our fraternity. Styles can be found in css/index.css, and scripts at js/index.js  -->
-        <section id="home">
-            <!-- This div holds the video -->
-            <div class="vendor">
-                <!-- an iframe is like a div which gets filled with content loaded from another page, and so here we're loading the video from vimeo -->
-                <iframe class="vid" src="//player.vimeo.com/video/81946092?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="400" height="225" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <br>
-            <!-- as the main body of text on the home page, here we describe, again, what we're all about, for those who prefer text instead of a great video -->
-            <div id="blue-body">
-                <p class="bodytext2">
-                In 2012, this co-ed professional fraternity was founded by a group of Informatics students at the University of Michigan in Ann Arbor. From business students to computer scientists, humanities majors to young entrepreneurs, Kappa Theta Pi bonds over a passion for technology. Whether it's forming a startup, developing professional skills, or learning more about the world, Kappa Theta Pi offers a tight-knit community bringing together fresh ideas, perspectives, and skills. Kappa Theta Pi develops the leaders and best.</p>
-                <p><a class="videolink" href="http://vimeo.com/81946092">Watch our story</a>.</p>
-            </div>
+    <div id='main'>
+        <section id='home' class='page'>
+            MAKE ME SEXY
         </section>
 
-
-        <!-- #RUSH -->
-        <!-- This is the rush section of our website, which is used to present rush and recruitment information. We're always looking for the best and brightest with a love for technology. Styles for this section can be found in css/rush.css --> 
-        <section id="rush">
-            <div id="white-body">
-                <!-- this first body of text describes what ktp has to offer -->
-                <p class="bodytexthead">RUSH KTP</p>
-                <p class="bodytext">
-                As an accepted member of Kappa Theta Pi, you will have access to a myriad of opportunities to further your professional development and personal enjoyment. We offer exclusive recruiting sessions, resume building, professional photography, startup opportunities, leadership roles, study groups, skill development, great networking, and fun social activities with like-minded people.<br><br>
-                Rush occurs at the beginning of both Fall & Winter Semesters.
-                </p>
-                <br>
-                <center><button id="modal-button" class="btn btn-danger btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Want More?</button></center>
-                <br>
-                <!-- Modal ajax form input -->
-                <!-- this chunk of code is the modal view, which is the little drop down window that appears when you click on the 'want to hear more' button. modals are now pretty standard, and use a section of a page thats initially hidden, but the section still needs to be written somewhere, and so thats why this section of code may be confusing -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Tell Us About Yourself</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form action="javascript:interested()" id="interest-form" method="post">
-                                    <input type="text" name="name" placeholder="Name" required><br>
-                                    <br><input type="text" name="email" placeholder="Email" required><br>
-                                    <br>
-                                    <input type="radio" name="year" value="freshman"> Freshman&nbsp;
-                                    <input type="radio" name="year" value="sophmore"> Sophomore&nbsp;
-                                    <input type="radio" name="year" value="junior"> Junior&nbsp;
-                                    <input type="radio" name="year" value="senior"> Senior
-                                    <br><br>
-                                    <center>
-                                    <input type="submit" value="Submit" class="submitbutton">
-                                    </center>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id='about' class='page'>
+            PRESIDENTS WELCOME
         </section>
 
-
-        <!-- #EVENTS -->
-        <!-- this section holds the events and calender of the page, we're hoping to do more here in the near future to highlight the upcoming events, and have seperate private and public calenders, but for now, its just our public events calendar -->
-        <section id="events">
-            <div id="calendar">
-                <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=umich.edu_ge12tdb0ffc8caqneev860m55k%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style=" border-width:0 " width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
-            </div>
+        <section id='members' class='page'>
+            A LIST OF PEOPLE
         </section>
 
+        <section id='rush' class='page'>
+            JOIN US
+        </section>
 
-        <!-- #CONTACT -->
-        <!-- this is the contact section of the page, which we can do a bit more with, if we want, but it doesnt hurt to keep it classy -->
-        <section id="contact">
+        <section id='committees' class='page'>
+            WHAT WE DO
+        </section>
+
+        <section id='contact' class='page'>
             <p class="contactinfo">For more information, write to President Justin Andersun (<a href="mailto:anderju@umich.edu">anderju@umich.edu</a>).</p>
         </section>
-
-
-    </div><!-- end ascensor -->
-
-
-    <!-- #FOOTER -->
-    <!-- this is the bottom bar of the page, which exists outside of the ascensor div, so it doesnt slide page to page. this is a good place to put some links and some classy little styling. -->
-    <footer>
-        <div id="footerinfo">
-            <p id="kappathetapifooter" class="ktp-fade">Kappa Theta Pi</p>
-        </div>
-        <div id="sociallinx">
-            <a href="https://www.facebook.com/KappaThetaPi" class="facebook-hover social-slide" target="_blank"></a>
-            <a href="https://twitter.com/KappaThetaPi" class="twitter-hover social-slide" target="_blank"></a>
-            <a href="http://www.linkedin.com/groups?gid=4661089" class="linkedin-hover social-slide" target="_blank"></a>
-        </div>
-    </footer>
+    </div>
 </body>
-</html>
-
-
-<!-- these are the scripts loaded onto the website -->
-<script src="http://platform.twitter.com/widgets.js" id="twitter-wjs"></script>
 <script src="lib/js/jquery.min.js" type="text/javascript"></script>
 <script src="lib/js/jquery-ui.min.js" type="text/javascript"></script>
-<script src="lib/js/jquery.ascensor.min.js" type="text/javascript"></script>  
-<script src="lib/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="lib/js/jquery.fitvids.js"></script>
-<script src="js/index.js" type="text/javascript"></script>
-<script src="js/rush.js" type="text/javascript"></script>
+<script src="lib/js/page.min.js" type="text/javascript"></script>
+<script src="js/routes.js" type="text/javascript"></script>
+</html>

@@ -1,13 +1,22 @@
-//Video Stuff
-var ascensor = $('#ascensor').ascensor({direction:"x",ascensorFloorName:['','RUSH','EVENTS','CONTACT'],loop:false,time:400,childType:'section'});
-$('#nav-bar div').click(function(event, index){
-	ascensor.trigger('scrollToStage', $(this).index());
+$('.nav-link').click(function (evt) {
+	console.log(evt.target.innerText)
 });
-ascensor.on('scrollStart', function(event, floor){
-	$('#nav-bar div').removeClass('selected');
-	$('#nav-bar div:eq('+floor.to+')').addClass('selected nav-active');
+
+page.base('/');
+page('/',function(ctx) {
+	showPage('home');
 });
-$(".vendor").fitVids();
+page('/:section', function (ctx) {
+	showPage(ctx.params.section.toLowerCase())
+});
+page();
+
+function showPage(section) {
+	$('.page').hide();
+	console.log('#'+section);
+	$('#'+section).show();
+}
+
 
 //Google Analytics
 var _gaq = _gaq || [];

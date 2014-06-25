@@ -25,9 +25,11 @@ app.use(require('connect-flash')());
  
 require('./auth/routes.js')(app,passport);
 
-app.get('/', function (req,res) {
+app.get('/:section', serveIndex);
+app.get('/', serveIndex);
+function serveIndex (req,res) {
 	res.sendfile('public/index.html');
-});
+};
 
 app.post('/interest', function (req, res) {
 	var str = 'name: ' + req.body.name + ' email: ' + req.body.email + ' year: ' + req.body.year + '\n';
@@ -40,22 +42,4 @@ app.use(express.static(__dirname+'/public'));
 
 app.listen(3000,function(){
 	console.log('KTP web server listening on port 3000!');
-});
-
-// Serve up the data directory
-//
-var dataServ = express();
-dataServ.use(require('serve-index')('data'));
-dataServ.listen(6969,function(){
-	console.log('Servin up 6969!');
-});
-
-
-// pull from repo upon release
-//
-var exec = require('child_process').exec;
-app.post('/api/gitrelease', function (req, res) {
-	exec('git pull', function() {
-		console.log('pulled update from github');
-	});
 });
