@@ -1,23 +1,3 @@
-$('.nav-link').click(function (evt) {
-	console.log(evt.target.innerText)
-});
-
-page.base('/');
-page('/',function(ctx) {
-	showPage('home');
-});
-page('/:section', function (ctx) {
-	showPage(ctx.params.section.toLowerCase())
-});
-page();
-
-function showPage(section) {
-	$('.page').hide();
-	console.log('#'+section);
-	$('#'+section).show();
-}
-
-
 //Google Analytics
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-46859810-1']);

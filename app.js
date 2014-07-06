@@ -29,7 +29,7 @@ app.get('/:section', serveIndex);
 app.get('/', serveIndex);
 function serveIndex (req,res) {
 	res.sendfile('public/index.html');
-};
+}
 
 app.post('/interest', function (req, res) {
 	var str = 'name: ' + req.body.name + ' email: ' + req.body.email + ' year: ' + req.body.year + '\n';
