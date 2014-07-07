@@ -12,12 +12,12 @@ var userSchema = mongoose.Schema({
 
 });
 
-// generating a hash
+// hash the password so our admin can't read them
 userSchema.methods.generateHash = function(password, next){
     return bcrypt.hash(password, bcrypt.genSaltSync(8), null, next);
 };
 
-// checking if password is valid
+// this allows us to validate a password in ciphertext
 userSchema.methods.validPassword = function(password, next) {
     return bcrypt.compare(password, this.auth.password, next);
 }
