@@ -11,7 +11,7 @@ page('/:section', function (ctx) {
 page();
 
 $('.nav-link').click(function (evt) {
-    var section = evt.target.innerText.toLowerCase();
+    var section = evt.target.textContent.toLowerCase();
     showPage(section.toLowerCase());
     if (section == 'home') section = ''; 
     window.history.pushState(section,section,'/'+section);
