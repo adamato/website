@@ -71,13 +71,57 @@ body {
 }
 
 #home_content_1 {
-    height: 100%;
+    height: 600px;
     background: black;
     background: url('../img/binding_dark.png') repeat;
     opacity: .9;
 }
 
-/*#home_content_2 {
+#home_content_2 {
+    height: 400px;
+    background: white;
+}
+
+.home_niceSquare {
+    display: inline-block;
+    height: 15em;
+    width: 15em;
+/*    border: 2px solid black;
+    background-color: gray;*/
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+p.home_square {
+    font-size: 2.5em;
+    font-family: 'roboto', sans-serif;
+    color: black;
+    padding-bottom: 1em;    
+}
+
+.fa-custom {
+    font-size: 10em;
+    color: gray;
+}
+
+#home_content_3 {
     height: 600px;
-    background: orange;
-}*/
+    background: black;
+    background: url('../img/lghtmesh.png') repeat;
+    opacity: .6;    
+}
+
+#overlay_pic_3 {
+    background: url('../img/ktp_cider.jpg');
+    width: 100%;
+    height: 600px;
+}
+
+#home_content_3 > p {
+    font-size: 2.5em;
+    font-family: 'roboto', sans-serif;
+    color: black;
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;    
+}
