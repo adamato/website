@@ -52,7 +52,39 @@
         </section>
 
         <section id='contact' class='page'>
-            <p class="contactinfo">For more information, write to President Justin Andersun (<a href="mailto:anderju@umich.edu">anderju@umich.edu</a>).</p>
+            <form id="nl-form" class="nl-form" method="" action="">
+                Dear Kappa Theta Pi,<br><br>
+                My name is
+                <input name="name" type="text" value="Inky" placeholder="Inky Tentacles">
+                and I am a 
+                <select>
+                    <option value="1" selected>freshman</option>
+                    <option value="2">sophomore</option>
+                    <option value="3">junior</option>
+                    <option value="4">senior</option>
+                </select>
+                studying
+                <select>
+                    <option value="1" selected>information</option>
+                    <option value="2">computer science</option>
+                    <option value="3">business</option>
+                    <option value="4">engineering</option>
+                    <option value="5">art &amp; design</option>
+                </select>.
+                I am interested in
+                <select>
+                    <option value="1" selected>rushing</option>
+                    <option value="1">learning more about</option>
+                    <option value="2">partnering with</option>
+                </select>
+                your fraternity and can be reached at
+                <input name="email" type="email" value="" placeholder="this email">.
+                Also, I think you're really cool.
+                <div class="nl-submit-wrap">
+                    <button class="nl-submit" type="submit">Send my letter</button>
+                </div>
+                <div class="nl-overlay"></div>
+            </form>
         </section>
     </div>
 </body>
