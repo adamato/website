@@ -10,17 +10,74 @@ body {
 
 #nav-bar {
     width: 100%;
-    height: 10%;
+    height: 20%;
     background-color: purple;
     text-align: center;
 }
 
 .nav-link {
     width: 10%;
-    display: block;
+    display: inline-block;
     background-color: yellow;
+    padding: 0.8em;
 }
 
 .nav-link-selected {
     background-color: blue;
 }
+
+
+
+/*
+*
+* CSS for index.html, HOME
+*
+*
+*/
+
+
+#home {
+    text-align: center;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'PetitFormalScript';
+    src:url('../fonts/PetitFormalScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: cursive;
+}
+
+#home h1 {
+    font-size: 6.8em;
+    font-family: 'roboto', sans-serif;
+    color: #0835EE;
+    padding: 0.2em;
+    padding-top: 1.6em;
+}
+
+#home h2 {
+    font-size: 2.4em;
+    font-family: 'PetitFormalScript', sans-serif;
+    color: #00F32A;
+    padding: 0.8em; 
+}
+
+#home h3 {
+    font-size: 1.4em;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #888888;
+    padding: 1.4em;
+}
+
+#home_content_1 {
+    height: 100%;
+    background: black;
+    background: url('../img/binding_dark.png') repeat;
+    opacity: .9;
+}
+
+/*#home_content_2 {
+    height: 600px;
+    background: orange;
+}*/
