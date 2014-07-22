@@ -24,3 +24,6 @@ function showPage(section) {
         $('#'+section).stop().animate({opacity:1},500);
     });
 }
+
+
+$('.carousel').carousel();

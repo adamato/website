@@ -96,7 +96,8 @@ p.home_square {
     font-size: 2.5em;
     font-family: 'roboto', sans-serif;
     color: black;
-    padding-bottom: 1em;    
+    padding-bottom: 1em; 
+    padding-top: 1em;   
 }
 
 .fa-custom {
@@ -105,23 +106,73 @@ p.home_square {
 }
 
 #home_content_3 {
-    height: 600px;
+    height: 500px;
     background: black;
-    background: url('../img/lghtmesh.png') repeat;
-    opacity: .6;    
+    background: url('../img/fake_brick.png') repeat;
+    opacity: .8;    
 }
 
 #overlay_pic_3 {
     background: url('../img/ktp_cider.jpg');
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 #home_content_3 > p {
     font-size: 2.5em;
     font-family: 'roboto', sans-serif;
-    color: black;
+    color: white;
     padding-top: 5em;
     padding-left: 2em;
-    padding-right: 2em;    
+    padding-right: 2em; 
+    line-height: 1.5em;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*
+* CSS for RUSH SECTION
+*
+*
+*/
+
+
+#rush {
+    text-align: center;
+    height: 100%;
+}
+
+
+#rush_first_slide {
+    height: 600px;
+    background-color: yellow;
+}
+
+
+#carousel-example-generic {
+    height: 600px;
+    width: 100%;
+    background-color: gray;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%
+    overflow: hidden;
+
+}
+
+.carousel-caption {
+    color: black;
+    font-size: 14px;
 }
