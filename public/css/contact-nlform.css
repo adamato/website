@@ -19,22 +19,22 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
-body {
-	/*font-family: 'Amatic SC', cursive;*/
-	font-family: 'Lato', Calibri, Arial, sans-serif;
+#contact {
+	font-family: 'Lato', Arial, sans-serif;
 	color: #ffe8e7;
 	background: #458FFF;
 	font-weight: 300;
 	overflow-x: hidden;
+	padding: 10%;
 }
 
-a {
-	color: #888;
+#contact a {
+	color: #FFC666;
 	text-decoration: none;
 }
 
-a:hover,
-a:active {
+#contact a:hover,
+#contact a:active {
 	color: #333;
 }
 

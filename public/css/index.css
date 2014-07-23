@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .page {
@@ -11,19 +12,23 @@ body {
 #nav-bar {
     width: 100%;
     height: 20%;
-    background-color: purple;
+    background-color: transparent;
     text-align: center;
+    padding: 0.5em 0em;
 }
 
 .nav-link {
-    width: 10%;
     display: inline-block;
-    background-color: yellow;
-    padding: 0.8em;
+    background-color: #FFC666;
+    color: #333333;
+    padding: 1em 1.2em;
+    font-size: 1.2em;
+    margin: 0em 0.5em;
 }
 
 .nav-link-selected {
-    background-color: blue;
+    background-color: #333333;
+    color: #FFC666;
 }
 
 
