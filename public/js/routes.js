@@ -26,4 +26,6 @@ function showPage(section) {
 }
 
 
-$('.carousel').carousel();
+$('.carousel').carousel({
+    interval: 4500
+});

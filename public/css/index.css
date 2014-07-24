@@ -71,7 +71,7 @@ body {
 }
 
 #home_content_1 {
-    height: 600px;
+    height: 700px;
     background: black;
     background: url('../img/binding_dark.png') repeat;
     opacity: .9;
@@ -158,21 +158,3 @@ p.home_square {
     background-color: yellow;
 }
 
-
-#carousel-example-generic {
-    height: 600px;
-    width: 100%;
-    background-color: gray;
-}
-
-.carousel-inner {
-    position: relative;
-    width: 100%
-    overflow: hidden;
-
-}
-
-.carousel-caption {
-    color: black;
-    font-size: 14px;
-}
