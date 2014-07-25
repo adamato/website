@@ -3,6 +3,18 @@
 
 }
 
+#ExtraSpace{
+	background-color: #00F32A;
+	padding: .2em;
+	padding-top: 5.6em;
+}
+
+#AboutPic{
+	background: url(../img/members3.png);
+	width: 100%;
+	height: 500px;
+}
+
 #mission {
 	background-color: #00F32A;
 	padding: .2em;
