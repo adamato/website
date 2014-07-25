@@ -112,10 +112,10 @@
                 My name is
                 <input name="name" type="text" value="Inky" placeholder="Inky Tentacles">
                 and I am a 
-                <select>
-                    <option value="1" selected>student</option>
-                    <option value="2">company representative</option>
-                    <option value="3">student org. representative</option>
+                <select name="role">
+                    <option value="student" selected>student</option>
+                    <option value="company representative">company representative</option>
+                    <option value="student org representative">student org representative</option>
                 </select>
 
                 <div id="if_student">
@@ -163,9 +163,12 @@
                     </select>
                 </div>
 
-                Kappa Theta Pi and can be reached at
-                <input name="email" type="email" value="" placeholder="this email">.
-                Also, I think you're really cool.
+                <div id="closing">
+                    Kappa Theta Pi and can be reached at
+                    <input name="email" type="email" value="" placeholder="this email">.
+                </div>
+                <br><br>
+
                 <div class="nl-submit-wrap">
                     <button class="nl-submit" type="submit">Send</button>
                 </div>
