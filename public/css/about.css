@@ -5,12 +5,26 @@
 
 #mission {
 	background-color: #00F32A;
+	padding: .2em;
+	padding-top: 5.6em;
 
 }
+
 
 #welcome {
 	background-color: #7F98FD;
 
+}
+
+#welcome h1{
+	font-size: 3.0em;
+	font-family: 'Roboto', sans-serif;
+	padding: .5em;
+}
+
+#welcome p{
+	padding: .5em;
+	font-size: 2em;
 }
 
 #vision {
