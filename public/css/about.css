@@ -13,16 +13,19 @@
 	background: url(../img/members3.png);
 	width: 100%;
 	height: 500px;
+	opacity: .5;
 }
 
-#mission {
-	background: url(..img/wordCloud.png);
-	width: 100%;
-	height: 500px;
-	padding: .2em;
-	padding-top: 5.6em;
-
+#AboutPic p{
+	font-size: 3.0em;
+	color: white;
 }
+
+/*#mission {
+	background-color: #00F32A;
+	padding: .6em;
+	height: 500px
+}*/
 
 
 #welcome {
@@ -42,11 +45,28 @@
 }
 
 #vision {
-	background-color: #00F32A;
+	background: url(../img/wordCloud.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: .5;
+	width: 100%;
+	height: 625px;
+	padding: .5em;
 }
 
 #funFacts{
 	background-color: #7F98FD;
 
+}
+
+#aboutFinal{
+	background-color: #00F32A;
+	height:300px;
+}
+
+#aboutFinal p{
+	color: black;
+	font-size: 3.0em;
+	padding-top: 2em;
 }
 
