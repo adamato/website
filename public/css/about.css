@@ -7,6 +7,7 @@
 	background-color: #00F32A;
 	padding: .2em;
 	padding-top: 5.6em;
+	position: relative;
 }
 
 #AboutPic{
@@ -14,6 +15,8 @@
 	width: 100%;
 	height: 500px;
 	opacity: .5;
+	position: relative;
+	z-index: -1;
 }
 
 #AboutPic p{
@@ -30,7 +33,8 @@
 
 #welcome {
 	background-color: #7F98FD;
-
+	position: relative;
+	top: -10px;
 }
 
 #welcome h1{

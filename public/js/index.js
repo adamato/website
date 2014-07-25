@@ -10,7 +10,7 @@ _gaq.push(['_trackPageview']);
 
 
 //Navigation Menu, for Mobile
-
+/*
 $(function(){
 	var pull		= $('#pull');
 		menu        = $('nav');
@@ -37,3 +37,15 @@ $(function(){
 		}
 	});
 });
+*/
+(function(){
+	function parallax(){
+		var scrolled = $(window).scrollTop();
+		$('#AboutPic').css('top', (scrolled * 0.2) + 'px');
+		$('#ExtraSpace').css('top', (scrolled * 0.2) + 'px');
+	}
+
+	$(window).scroll(function(e){
+		parallax();
+	});
+})();

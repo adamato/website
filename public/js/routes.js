@@ -1,11 +1,19 @@
 page.base();
 page('/',function(ctx) {
-    if(ctx.init) $('#home').css('opacity',1);
+    if(ctx.init){
+        $('.page').hide();
+        $('#home').show();
+        $('#home').css('opacity',1);
+    }
     else showPage('home');
 });
 page('/:section', function (ctx) {
     var section = ctx.params.section.toLowerCase();
-    if(ctx.init) $('#'+section).css('opacity',1);
+    if(ctx.init){
+        $('.page').hide();
+        $('#'+section).show();
+        $('#'+section).css('opacity',1);  
+    } 
     else showPage(section);
 });
 page();
@@ -20,7 +28,10 @@ $('.nav-link').click(function (evt) {
 });
 
 function showPage(section) {
-    $('.page').stop().animate({opacity:0},500,function() {
+    $('.page').stop().animate({opacity:0},500, function() {
+        window.scrollTo(0,0);
+        $('.page').hide();
+        $('#'+section).show();
         $('#'+section).stop().animate({opacity:1},500);
     });
 }
