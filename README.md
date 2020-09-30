@@ -1,4 +1,4 @@
-KTP WEBSITE FRAMEWORK  
+KTP WEBSITE FRAMEWORK  :
 =====================  
   
 Lightweight and flexible web development.  
@@ -28,14 +28,14 @@ data/				-good ol' port:6969
 auth/				-code for login and routing the web-app
 
 
-HOW TO CONTRIBUTE  
+HOW TO CONTRIBUTE  :
 =================  
   
 You can test and run the majority of front end by clicking and dragging public/index.html into a browser nav bar.  
 Feel free to make any changes and additions to the git. Be sure to update README whenever you are making a change that requires explanation.  
 Please comment sections of non-trivial code.  
   
-NODE.JS  
+NODE.JS  :
 =======  
 Server-side javascript, used to serve our content.  
 Download the latest version at http://nodejs.org/download/
