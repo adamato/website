@@ -11,11 +11,11 @@ public/
 	constitution/		-we the people  
 	css/				-stylesheets  
 	js/					-scripts  
-		/routes.js 		---single-page section transitions  
+        /routes.js 		---single-page section transitions  
 	img/				-image files (actual files omitted)  
 	lib/  				-static frameworks and externally developed files  
-		js/				---scripts (mostly jquery)  
-		css/ 			---styles (not bootstrap)  
+	js/				---scripts (mostly jquery)  
+	css/ 			---styles (not bootstrap)  
 	index.html 			-main page of website  
   
 :web server files  
@@ -33,7 +33,7 @@ HOW TO CONTRIBUTE
   
 You can test and run the majority of front end by clicking and dragging public/index.html into a browser nav bar.  
 Feel free to make any changes and additions to the git. Be sure to update README whenever you are making a change that requires explanation.  
-Please comment sections of non-trivial code.  
+Please comment sections of non-trivial code.  Thanks For Such a interesting Information
   
 NODE.JS  
 =======  
